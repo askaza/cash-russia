@@ -1,0 +1,145 @@
+html, body, div, span, small,  i, em, u,
+h1, h2, h3, h4, h5, h6, p, table, caption,
+tbody, tfoot, thead, tr, th, td,
+input, textarea, abbr, form, fieldset {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-weight: normal;
+}
+
+:focus {
+    outline:0;
+}
+
+
+
+/* fonts < */
+
+@font-face {
+    font-family: 'pf_beausans_prolight';
+    src: url('fonts/pfbeausanspro-light-webfont.eot');
+    src: url('fonts/pfbeausanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pfbeausanspro-light-webfont.woff') format('woff'),
+         url('fonts/pfbeausanspro-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_beausans_probold';
+    src: url('fonts/pfbeausanspro-bold-webfont.eot');
+    src: url('fonts/pfbeausanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
+         url('fonts/pfbeausanspro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_beausans_prothin';
+    src: url('fonts/pfbeausanspro-thin-webfont.eot');
+    src: url('fonts/pfbeausanspro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pfbeausanspro-thin-webfont.woff') format('woff'),
+         url('fonts/pfbeausanspro-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* fonts  > */
+
+body {
+    font-family:  'Tahoma' ,  'Arial', 'Helvetica', 'Geneva', sans-serif;
+    font-size:14px;
+    color: #000101;
+    line-height: 1.2;
+}
+
+
+img, a img {
+    border:none;
+}
+a {
+    color: #0073bc;
+}
+
+p {
+    line-height: 20px;
+    margin-bottom: 23px;
+}
+
+
+h2 {
+
+}
+
+h3 {
+
+
+}
+
+h5 {
+
+font-size: 20px;
+color:#000;
+}
+
+ ul,
+ ol {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+}
+
+ul li {
+    margin-top: 5px;
+    list-style: disc;
+}
+
+
+
+
+/* icons  < */
+
+.ico {
+    background: url(../images/bg/socail-icons.png) no-repeat 0 0;
+    display: block;
+    vertical-align: top;
+    width: 19px;
+    height: 19px;
+}
+
+.ico_fb {
+    background-position: 0 0;
+}
+.ico_tw {
+    background-position: 0 -22px;
+}
+.ico_vk {
+    background-position: 0 -43px;
+}
+.ico_ok {
+   background-position: 0 -67px;
+}
+/* clear */
+
+.clearfix:after,
+.columns:after,
+.promo:after,
+.container:after,
+.range:after {
+    content: ".";
+    display: block;
+    height: 0;
+    width: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+

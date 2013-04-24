@@ -1,0 +1,17 @@
+input {
+    overflow:visible;
+}
+
+/* zoomin */
+.clearfix, 
+.columns,
+.promo,
+.container,
+.range{
+	zoom:1;
+}
+
+ {
+   *zoom:1;
+   *display:inline;
+}

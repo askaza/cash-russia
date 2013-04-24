@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CashRussia</title>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" rel="icon" href="favicon.ico" />
+        <link type="image/png" rel="icon" href="favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
+
+
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+
+        <!--[if lte IE 8 ]>
+                <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <![endif]-->
+
+
+    </head>
+    <body>
+	<ul class="social-buttons">
+	    <li class="social-buttons__item"><a class="ico ico_fb" href="#"></a></li>
+	    <li class="social-buttons__item"><a class="ico ico_vk" href="#"></a></li>
+	    <li class="social-buttons__item"><a class="ico ico_tw" href="#"></a></li>
+	     <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
+	</ul>
+
+	<div class="wrapper">
+	    <div class="header"> <!-- header -->
+		<div class="container">
+		    <h1 class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></h1>
+		    <span class="slogan">Всероссийская система онлайн-займов</span>
+
+		    <ul class="menu menu_main">
+			<li class="menu__item">
+			    <a href="#">О проекте</a>
+			    <ul class="menu submenu">
+				<li class="menu__item"><a href="#">Сертификаты</a></li>
+				<li class="menu__item"><a href="#">Контакты</a></li>
+			    </ul>
+			</li>
+			<li class="menu__item"><a href="#">Как получить?</a></li>
+			<li class="menu__item"><a href="#">Как погасить?</a></li>
+			<li class="menu__item"><a href="#">Новости</a></li>
+		    </ul>
+
+		    <div class="header-links">
+			<span class="header-links__call">
+			    <a class="order-call" href="#">Заказать звонок</a>
+			    <i class="header-links__note">Перезвоним в удобное Вам время</i>
+			</span>
+			<span class="header-links__personal">
+			    <a class="order-call" href="#">Личный кабинет</a>
+			    <a href="#" class="header-links__note">Добавить в избранное</a>
+			</span>
+		    </div>
+		</div>
+	    </div> <!-- /.header -->
+
+	    <div class="main"> <!-- .main -->
+
+		<div class="promo"> <!-- .promo -->
+		    <div class="container">
+			<div class="slider" id="slider">
+			    <div class="slides_container slides-list">
+				<div class="slides-list__item">
+				    <div class="slide-img"><img src="images/teaser1.png" alt="" title="" /></div>
+				    <h2 class="slide-title">ДЕНЬГИ ЗА&nbsp;15&nbsp;МИНУТ</h2>
+				    <p class="slide-text">конфиденциально
+					<small>и без документов</small>
+				    </p>
+				</div>
+				<div class="slides-list__item slides-list__item_2">
+				    <div class="slide-img">  <img src="images/teaser2.png" alt="" title="" /></div>
+				    <h2 class="slide-title"> пополни онлайн&nbsp;-&nbsp;кошелек</h2>
+				    <p class="slide-text">просто и быстро &mdash;
+					<small>отдашь потом</small>
+				    </p>
+				</div>
+			    </div>
+			</div>
+			<div class="calc">
+			    <i class="calc_corner_l"></i>
+			    <i class="calc_corner_r"></i>
+			    <div class="calc__inner">
+				<h2 class="calc__title">Сумма займа и выплат</h2>
+				<div class="range range_money">
+				    <div class="range-input">
+					<label for="money">Берем:</label>
+					<input type="text" name="money" id="money" value="1000" />
+				    </div>
+				    <div class="range-buttons">
+					<a class="range-buttons_up"></a>
+					<a class="range-buttons_down"></a>
+				    </div>
+				    <div class="range-slider-wrapper">
+					<div class="range-slider-scale">
+					    <span class="left">1000</span>
+					    <span class="center">7500</span>
+					    <span class="right">15000</span>
+					</div>
+					<div id="range-money-sl" class="range-slider"></div>
+
+				    </div>
+				</div>
+
+				<div class="range range_days">
+				    <div class="range-input">
+					<label for="money">На срок:</label>
+					<input type="text" name="days" id="days" value="2" />
+					<span>дня</span>
+				    </div>
+				    <div class="range-buttons">
+					<a class="range-buttons_up"></a>
+					<a class="range-buttons_down"></a>
+				    </div>
+				    <div class="range-slider-wrapper">
+					<div class="range-slider-scale">
+					    <span class="left">2</span>
+					    <span class="center">15</span>
+					    <span class="right">30</span>
+					</div>
+					<div id="range-days-sl" class="range-slider">
+
+					</div>
+
+				    </div>
+				</div>
+
+				<div class="clearfix">
+				<div class="persent">
+				    <span class="persent__value">от 0,5% до 3%</span>
+				    <small class="note">мы рассчитаем размер выплаты индивидуально</small>
+				</div>
+
+				<a href="#" class="submit-btn">Получить займ</a>
+				</div>
+				<div class="payment-type">
+				    <img src="images/type-order-bg.png" alt="" title="Карта временно не доступна" height="80" width="163"/>
+				    <span class="payment-type__note">Выберите систему получения займа</span>
+				</div>
+			    </div>
+			</div>
+
+
+		    </div>
+		</div> <!-- /.promo -->
+
+		<div class="container home-content">
+		    <div class="condition">
+			<h3 class="condition__title"><i class="condition__title-star">*</i><a href="#">Обязательные условия получения займа</a></h3>
+			<div class="condition__text">
+			    Нужен: <a href="#">Сертификат WebMoney</a><br/>
+			    или аккаунт в соцсетях: <br/>
+			    <a href="#">«Вконтакте»</a><br/>
+			    или <a href="#">«Одноклассники»</a>
+			</div>
+		    </div>
+		    <div class="promo-info">
+			<h3 class="promo-slogan">Сейчас выдано займов на 16 000 000 руб.</h3>
+			<div class="confidence">
+			    <h3 class="confidence__title"><a href="#">Конфиденциальность
+				    информации</a></h3>
+			    <div class="confidence__text">
+				За все время работы, опираясь на принципы честного и ответственного
+				ведения бизнеса, компания зарекомендовала себя как надежный партнер
+				в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
+				сфере микрофинансирования.
+			    </div>
+			</div>
+			<div class="action">
+			    <span class="action__terms">приведи друга&mdash;</span>
+			    <span class="action__price">получи %</span>
+			    <span class="action__description">
+				Каждый приведший в сервис
+				своего друга получает Бонус
+				на счет в личном кабинете
+			    </span>
+			</div>
+		    </div>
+
+		</div>
+	    </div>  <!-- /.main -->
+	</div>
+
+	<div class="footer"> <!-- .footer -->
+
+		<div class="footer-columns container">
+		    <div class="footer-column__item footer-column__item_logos">
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+		    </div>
+		     <div class="footer-column__item">
+			 За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		     </div>
+		      <div class="footer-column__item">
+			  За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		      </div>
+
+		      <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+		</div>
+
+	</div> <!-- /.footer -->
+
+    </body>
+</html>
+
