@@ -26,8 +26,6 @@ body {
 .main {
     padding-bottom: 115px;
 }
-
-
 /* header < */
 
 .header {
@@ -50,7 +48,7 @@ body {
     top: 13px;
 }
 .logo__img {
-    display: block; 
+    display: block;
 }
 
 .slogan {
@@ -185,7 +183,7 @@ body {
     line-height: 12px;
     float: left;
     margin-left: 50px;
-    margin-top: 8px;
+    margin-top: 10px;
     max-height: 85px;
     overflow: hidden;
     width: 180px;
@@ -207,7 +205,7 @@ body {
 .logo-footer {
     position: absolute;
     right: 16px;
-    top: 40px;
+    top: 43px;
 }
 
 /* footer > */
@@ -216,19 +214,20 @@ body {
 
 .promo {
     background: url(../images/bg/promo.png) repeat-x 0 0;
-    min-height: 432px;
+    height: 432px;
     position: relative;
     z-index: 5;
 }
 
 .slider {
-    background: url(../images/bg/main-slider.png) no-repeat 0 0;
+    background: url(../images/bg/main-slider.png) no-repeat 0 -1px;
     height: 496px;
     width: 395px;
     padding: 0 145px 0 115px;
-    position: relative;
     margin-left: -114px;
     position: absolute;
+    top:0;
+    left:0;
 }
 .slides-list {
 
@@ -267,7 +266,7 @@ body {
 }
 
 .slide-text {
-   font-family: 'pf_beausans_prothin';
+    font-family: 'pf_beausans_prothin';
     color: #fff;
     font-size: 34px;
     height: 85px;
@@ -309,11 +308,10 @@ body {
 
 .calc {
     float: right;
+    margin-right: -20px;
+    margin-top: 22px;
     position: relative;
-    margin-top: 16px;
-    margin-right: -22px;
-    width: 580px;
-
+    width: 570px;
     z-index: 10;
 }
 .calc_corner_l {
@@ -336,7 +334,7 @@ body {
 .calc__inner {
     background: url(../images/bg/calc-content.png) repeat-x 0 0;
     position: relative;
-    padding: 13px 5px 0 10px;
+    padding: 13px 5px 0 16px;
     margin: 0 36px;
     height: 404px;
 }
@@ -344,13 +342,16 @@ body {
     background: url(../images/bg/calc-ico.png) no-repeat 0 2px;
     color: #fff;
     font-size: 24px;
-    margin-left: 80px;
+    margin-left: 82px;
     padding-left: 35px;
     margin-bottom: 20px;
 }
 
 .range {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+}
+.range_days {
+    margin-bottom: 2px;
 }
 .range-input {
     float: left;
@@ -380,12 +381,16 @@ body {
     position: relative;
     height: 60px;
     margin-top: 14px;
+    margin-right: 5px;
     padding: 0 11px;
     width: 310px;
 }
-.range-slider {
+.calc .range-slider {
     width: 304px;
     position: relative;
+    background: 0;
+    border:0;
+    border-radius:0;
 }
 .range-slider-scale {
     position: relative;
@@ -411,7 +416,7 @@ body {
     font-size: 10px;
     width: 35%;
 }
-.range-slider .ui-slider-range {
+.calc .range-slider .ui-slider-range {
     border-radius: 10px;
     display: block;
     position: absolute;
@@ -421,20 +426,22 @@ body {
     width: 304px;
     z-index: 1;
 }
-.range-slider .ui-slider-handle {
+.calc .range-slider .ui-slider-handle {
     height: 38px;
     position: absolute;
     text-decoration: none;
     margin-left: -16px;
     top: 13px;
     width: 38px;
+    border:0;
+    cursor: pointer;
     z-index: 10;
 }
 
 
 .range-buttons {
     float: left;
-    margin: 38px 25px 0 -3px;
+    margin: 39px 0 0 2px;
     width: 22px;
 }
 .range-buttons_up {
@@ -460,42 +467,22 @@ body {
     border:2px solid #d0a436;
     border-bottom: 2px solid #fcd788;
 }
-.range_money .ui-slider-range  {
+.calc .range_money .ui-slider-range  {
     background: url(../images/bg/money-rank-alive.png) repeat-x 0 0;
 }
-.range_money  .ui-slider-handle {
+.calc .range_money  .ui-slider-handle {
     background: url(../images/bg/money-calc-picker.png) no-repeat 0 0;
-}
-.range_money .range-label {
-    display: block;
-    margin-left: -45px;
-    text-align: right;
-    width: 46px;
-    color: #000000;
-    height: 38px;
-    line-height: 36px;
-    font-size: 12px;
 }
 
 .range_days  .range-input input {
     border:2px solid #dcda00;
     border-bottom: 2px solid #e7e68e;
 }
-.range_days .ui-slider-range  {
+.calc .range_days .ui-slider-range  {
     background: url(../images/bg/days-rank-alive.png) repeat-x 0 0;
 }
-.range_days  .ui-slider-handle {
+.calc .range_days  .ui-slider-handle {
     background: url(../images/bg/days-calc-picker.png) no-repeat 0 0;
-}
-.range_days .range-label {
-    display: block;
-    margin-left: -25px;
-    text-align: right;
-    width: 26px;
-    color: #000000;
-    height: 38px;
-    line-height: 36px;
-    font-size: 12px;
 }
 .range_days input {
     width: 27px;
@@ -525,13 +512,13 @@ body {
 .persent__value {
     color: #ffdd00;
     font-size: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     text-shadow: 1px 0 1px #b59e0b;
     display: block;
 }
 .persent .note {
     display: block;
-    margin-left: 20px;
+    margin-left: 2px;
 }
 
 
@@ -539,26 +526,26 @@ body {
     background: url(../images/bg/calc-btn.png) no-repeat 0 0;
     float: right;
     font-size: 25px;
-    height: 61px;
+    height: 62px;
     line-height: 56px;
     margin-right: 10px;
     margin-top: 15px;
     text-align: center;
     text-decoration: none;
     text-shadow: 1px -1px 1px #6F4A1A;
-    width: 291px;
+    width: 292px;
     color: #fff;
 }
 .submit-btn:hover {
-    background: url(../images/bg/calc-btn.png) no-repeat 0 -76px;
+    background: url(../images/bg/calc-btn.png) no-repeat 0 -72px;
 }
 .submit-btn:active {
-    background: url(../images/bg/calc-btn.png) no-repeat 0 -165px;
+    background: url(../images/bg/calc-btn.png) no-repeat 0 -143px;
 }
 .payment-type {
     clear: both;
-     margin-left: -6px;
-    padding-top: 18px;
+    margin-left: 4px;
+    padding-top: 20px;
 }
 .payment-type__note {
     color: #FFFFFF;
@@ -567,6 +554,56 @@ body {
     padding-top: 20px;
     vertical-align: top;
     width: 135px;
+}
+
+.payment-type-slider {
+    position: relative;
+    padding: 0 70px 0 60px;
+    background: url(../images/bg/payment-line.png) no-repeat 46px 32px;
+    height: 60px;
+    width: 33px;
+    float: left;
+}
+.payment-type-slider .range-slider {
+    height: 22px;
+    width: 26px;
+    left:58px;
+    position: absolute;
+    top:33px;
+}
+.payment-type-ico {
+    display: block;
+    position: absolute;
+    background: url(../images/bg/payment-types.png) no-repeat 0 0;
+}
+.payment-type-kiwi {
+    top:0;
+    left:-3px;
+    height: 60px;
+    width: 40px;
+}
+.payment-type-kiwi.active {
+    background-position: 0 -68px;
+    height: 60px;
+    width: 40px;
+}
+.payment-type-card {
+    background-position: -41px 0;
+    right: 8px;
+    top: -2px;
+    height: 60px;
+    width: 50px;
+}
+.payment-type-card.active {
+    background-position: -41px -60px;
+    height: 60px;
+    width: 50px;
+}
+
+.calc .payment-type-slider .ui-slider-handle {
+    background: url(../images/bg/payment-type-picker.png) no-repeat 0 0;
+    top:-6px;
+    margin-left: -23px;
 }
 /* promo >  */
 
@@ -594,7 +631,7 @@ body {
 .condition__title {
     font-size: 30px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 .condition__title-star {
     color: #e20613;
@@ -610,7 +647,7 @@ body {
 .promo-info {
     float: right;
     position: relative;
-    padding-top: 18px;
+    padding-top: 11px;
     width: 520px;
 }
 
@@ -626,7 +663,7 @@ body {
 .confidence {
     font-size: 12px;
     line-height: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
     min-height: 217px;
     width: 265px;
 }
@@ -692,8 +729,6 @@ body {
 
 /* socail buttons */
 
-
-
 .social-buttons  {
     margin: 0;
     padding: 0;
@@ -708,3 +743,595 @@ body {
     list-style: none;
 }
 
+
+/* columns < */
+
+.main_columns {
+    background: url(../images/bg/columns-bg.png) repeat-x 0 0;
+}
+.column-head {
+    position: relative;
+    padding-top: 22px;
+    height: 160px;
+    overflow: hidden;    
+}
+.column-content {
+    padding-top: 15px;
+}
+
+
+.column-left {
+    float: left;
+    width: 390px;
+    padding-top: 365px;
+    position: relative;
+}
+.column-left .slider {
+    background: url(../images/bg/inner-slider.png) no-repeat 0 -1px;
+    margin-left: -118px;
+}
+.column-left .condition {
+    padding-right: 10px;
+    padding-top: 125px;
+    width: 345px;
+}
+
+.column-right {
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 530px;
+}
+
+.page-title {
+    color:#fff;
+    font-family: 'Tahoma';
+    font-weight: bold;
+    font-size:28px;
+    margin-bottom: 15px;
+}
+
+.form-progress {
+    background: url(../images/bg/form-progress.png) no-repeat 0 0;
+    width: 524px;
+    padding: 0 3px;
+    margin: 0;
+    height: 31px;
+    position: relative;
+    overflow: hidden;
+}
+.form-progress li {
+    float: left;
+    list-style:  none outside;
+    height: 22px;
+    line-height: 20px;
+    position: relative;
+}
+.form-progress li a {
+    color:#fff;
+    font-size: 12px;
+    font-family: 'Tahoma';
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    height: 22px;
+}
+.form-progress_step1 {
+    z-index: 10;
+    width: 177px;
+}
+.form-progress_step1.ready {
+    border-radius: 10px;
+}
+.form-progress_step1.ready  a {
+    background: url(../images/bg/progress-border.png) no-repeat 166px 50% ;
+}
+.form-progress_step2 {
+    margin-left: -9px;
+    width: 177px;
+    z-index: 8;
+}
+.form-progress_step2.ready {
+    border-radius: 0 10px 10px 0;
+}
+.form-progress_step2.ready a {
+    background: url(../images/bg/progress-border.png) no-repeat 166px 50% ;
+}
+.form-progress_step3 {
+    margin-left: -9px;
+    z-index: 6;
+    width: 187px;
+}
+.form-progress_step3.ready {
+    border-radius: 0 10px 10px 0;
+}
+
+.form-progress .ready {
+    background: url(../images/bg/progress-ready.png) repeat-x 0 0;
+}
+/* columns > */
+
+/* breadcrumbs < */
+
+.breadcumbs {
+    margin: 0 0 25px;
+    padding: 0;
+    letter-spacing: -3px;
+}
+.breadcumbs li {
+    letter-spacing: normal;
+    display: inline;
+    margin:  0 2px 0 0;
+    padding:  0 1px 0 0;
+    list-style: none outside;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Tahoma';
+}
+.breadcumbs li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Tahoma';
+}
+/* breadcrumbs > */
+
+
+
+
+/* form styles < */
+
+
+.fields-list {
+    margin: 0;
+    padding: 0;
+}
+
+.fields-list__item {
+    padding: 0;
+    margin: 0 0 15px;
+    list-style: none;
+}
+.fields-list__item .fields-list {
+    margin-top: 10px;  
+}
+
+.fields-list__item label {
+    float: left;
+    color: #575756;
+    font-family: 'Tahoma';
+    font-size:18px;
+    min-height: 38px;
+    line-height: 38px;
+    padding-right: 33px;
+    text-align: right;
+    position: relative;
+    width: 182px;
+}
+.fields-list__item .required {
+    position: absolute;
+    color:#e20613;
+    font-style:  normal;
+    font-size: 18px;
+    position: absolute;
+    right: 4px;
+    top:-17px;
+}
+
+.fields-list__item .field {
+    color: #231f20;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    line-height: 20px;
+    background: url(../images/bg/field-bg.png) repeat-x 0 0 #e0e0df;
+    padding:  5px 9px;
+    border-top:2px solid #8b8b89;
+    border-left:2px solid #aaaaa9;
+    border-right:2px solid #aaaaa9;
+    border-bottom:2px solid #d7d7d7;
+    width: 230px;
+}
+
+.fields-list .field:focus {
+    border-top:2px solid #486e99;
+    border-left: 2px solid #006cb5;
+    border-right: 2px solid #006cb5;
+    border-bottom: 2px solid #1b7cbf;
+}
+
+.fields-list__item .field_error, 
+.fields-list__item .field_error:focus {
+    border-color:#e20613;
+}
+
+
+.fields-list__item .field_textarea {
+    max-width: 230px;
+    background-size: auto 100%;
+    height: 100px;
+}
+.fields-list__item .field_data {
+    background-image: url(../images/bg/data-ico.png), url(../images/bg/field-bg.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: 214px 50%, 0 0;
+    padding-right: 45px;
+    width: 194px;
+}
+
+.fields-list__item .field_text_short {
+    float: left;width: 94px;
+    margin-right: 20px;
+}
+
+
+.ui-datepicker {
+    border-radius:0 !important;
+    border-top:2px solid #486e99 !important;
+    border-left: 2px solid #006cb5 !important;
+    border-right: 2px solid #006cb5 !important;
+    border-bottom: 2px solid #1b7cbf !important;
+    background: #fff url(../images/bg/datapicker-bg.png) repeat-x 0 27px !important;
+    padding:0 !important;
+    width:248px !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    background: url(../images/bg/field-bg.png) repeat-x 0 0 !important;
+    height:25px !important;
+    border-radius:0 !important;
+    border:0 !important;
+    border-bottom: 2px solid #1b7cbf !important;
+}
+
+.ui-datepicker .ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-next   {
+    display: none !important;
+}
+
+.ui-datepicker td {
+    padding:0 !important;
+}
+
+.ui-datepicker .ui-state-default,
+.ui-datepicker .ui-widget-content .ui-state-default, 
+.ui-datepicker .ui-widget-header .ui-state-default {
+    background: none !important;
+    border: 0 !important;
+    color: #70706e !important;
+    font-weight: normal !important;
+    font-family: 'Tahoma';
+    text-align: center;
+}
+.ui-datepicker .ui-state-active {
+    background: #d8d8d8 !important;
+}
+
+.jq-selectbox .select {
+    background: url(../images/bg/field-bg.png) repeat-x 0 0;
+    height: 26px;
+    float:none !important;
+    padding-right: 27px;
+    position: relative;
+}
+
+.jq-selectbox .select .text {
+    color:#585756;
+    font-size:18px;
+    font-family: 'Tahoma';
+    display: block;
+}
+.jq-selectbox .trigger {
+    position: absolute;
+    right:4px;
+    top:0;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+.jq-selectbox .trigger .arrow {
+    background: url(../images/bg/select-arrows.png) no-repeat 0 0;
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+.jq-selectbox .dropdown {
+    max-height: 152px;
+    border-color: #486E99 #006CB5 #1B7CBF #006CB5 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-top:0;
+    width: 100%;
+}
+
+.ui-datepicker-title {
+    margin:0 !important; 
+    margin-left: -2px !important;
+    height: 25px !important;
+}
+
+.ui-datepicker .jq-selectbox {
+    float:left;
+    border-left:2px solid #0066ac;
+    width: 123px;
+}
+.ui-datepicker .jq-selectbox .dropdown {
+    width: 123px;
+    margin-left: -2px;
+}
+.ui-datepicker .jq-selectbox .select {
+    height: 25px !important;
+}
+
+.ui-datepicker .jq-selectbox .text {
+    height: 25px;
+    height: 25px;
+    line-height: 22px;
+    padding-left: 5px;
+    text-align: left;
+}
+.ui-datepicker .trigger {
+    right: -9px;
+    top: 2px;
+}
+.ui-datepicker .trigger .arrow {
+    background: url(../images/bg/select-arrows.png) no-repeat 0 0;
+    background-size: 20px auto;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.fields-list__item_address_radio label  {
+    font-size: 12px;
+    color:#f29100;
+    line-height: 14px;
+}
+
+.radio-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top:3px;
+}
+.jq-radio {
+    display: block;
+    background: url(../images/bg/radio.png) no-repeat 0 0;
+    height: 21px;
+    width: 21px;
+}
+
+.jq-radio.checked {
+    background-position: -25px 0;
+}
+
+/* form styles > */
+
+
+/* vertical scrollbar */
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{       
+    background: #fff;
+    overflow: hidden;
+    position: relative;     
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 20px;
+    height: 100%;	
+    border-color: #486E99 #006CB5 #1B7CBF !important;
+    border-style: solid !important;
+    border-width: 0 2px 0 2px!important;
+}
+
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #fff;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: url(../images/bg/scroll-drug.png) no-repeat 0 0;
+    background-size: 16px 100%;
+    position: relative;
+    top: 0;
+    left: 2px;
+    cursor: pointer;
+    width: 16px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+.ui-datapicker .jspContainer {
+    width:125px !important;
+}
+.jspPane ul, 
+.jspPane ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.jspPane ul li {
+    color: #6F6F6E;
+    display: block;
+    font-family: 'Tahoma';
+    font-size: 14px;
+    line-height: 15px;
+    padding: 4px 8px;
+    text-align: left;
+}
+.jspPane ul li:hover, 
+.jspPane ul li.selected {
+    background: #d9d9d9;
+}
+
+.ui-autocomplete {
+    background: url("../images/bg/datapicker-bg.png") repeat-x scroll 0 0 #FFFFFF !important;
+    border-color: #486E99 #006CB5 #1B7CBF !important;
+    border-radius: 0 0 0 0 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    padding: 0 !important;
+    max-height: 160px;
+    overflow: auto;
+    min-width: 248px;
+}
+
+.ui-menu-item {
+    list-style:  none outside;
+    display: block;    
+}
+.ui-menu-item a {
+    display: block;
+    background: none !important;
+    margin:0!important;
+    color: #6F6F6E !important;
+    display: block;
+    font-family: 'Tahoma';
+    font-size: 14px !important;
+    line-height: 15px !important;
+    padding: 4px 8px !important;
+    text-align: left;
+    border-radius:0 !important;
+    border:0 !important;
+}
+.ui-menu-item a:hover {
+    background: #d9d9d9 !important;
+}
+
+.error-box {
+    clear: both;
+    overflow: hidden;
+    margin-top: 10px;
+    color:#e20613;
+    font-size:12px;
+}
+
+.error-box label {
+    color:#e20613;
+    font-size:12px;
+    line-height: 14px;
+    height: auto;
+    min-height: auto;
+}
+
+.error-text {
+    overflow: hidden;
+}
+
+.btnset {
+    margin: 50px 0;
+    position: relative;
+    height: 41px;
+}
+
+.btnset input {
+    position: absolute;
+    text-indent: -9999px;
+    cursor: pointer;
+    height: 41px;
+    top:0;
+}
+
+.btnset .btn-prev {
+    background: url(../images/bg/btn-prev.png) no-repeat 0 0;
+    width: 127px;
+    left:57px;
+}
+
+
+.btnset .btn-next {
+    background: url(../images/bg/btn-next.png) no-repeat 0 0;
+    width: 118px;
+    left:215px;
+}

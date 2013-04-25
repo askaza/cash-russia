@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CashRussia</title>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" rel="icon" href="favicon.ico" />
+        <link type="image/png" rel="icon" href="favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
+
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+
+        <!--[if lte IE 8 ]>
+                <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <![endif]-->
+
+        <script>
+
+            $(function() {
+
+                $(".field_data").datepicker({
+                    changeMonth: true,
+                    changeYear: true
+
+                });
+
+                $(".field_data").on("focus", function() {
+                    $(".ui-datepicker select").styler();
+                    $('.select').click(function() {
+                        $(this).next('.dropdown').jScrollPane();
+                    });
+                });
+
+                $('.form select, .form input[type="radio"]').styler();
+                $('.form .select').click(function() {
+                    $(this).next('.dropdown').jScrollPane();
+                });
+                
+               
+
+
+
+
+                var Regions = [
+                    "Москвоская область",
+                    "Краснодарский край",
+                    "Адыгейская республика", 
+                    "Москвоская область",
+                    "Краdsfgfdснодарский край",
+                    "Адыгейская реsdfgfdспублика", 
+                    "Москвоская область",
+                    "Краснодарскиsdfgfdgй край",
+                    "Адыгейская республика", 
+                    "Москвоскаяsdfgfdобласть",
+                    "Краснодарский край",
+                    "Адыгейская республика", 
+                    "Москвоская область",
+                    "Краснодарский край",
+                    "Адыгейская республика", 
+                    "Москвоская область",
+                    "Краdsfgfdснодарский край",
+                    "Адыгейская реsdfgfdспублика", 
+                    "Москвоская область",
+                    "Краснодарскиsdfgfdgй край",
+                    "Адыгейская республика", 
+                    "Москвоскаяsdfgfdобласть",
+                    "Краснодарский край",
+                    "Адыгейская республика"
+                ];
+                var City = [
+                    "Москва",
+                    "Краснодар",
+                    "Волгоград"                   
+               
+                ];
+
+                $(".field_autocomplete_region").autocomplete({
+                    source: Regions, 
+                    open: function( event, ui ) {
+                         $('.ui-autocomplete').jScrollPane();
+                    }
+                });
+                 $(".field_autocomplete_city").autocomplete({
+                    source: City, 
+                    open: function( event, ui ) {
+                         $('.ui-autocomplete').jScrollPane();
+                    }
+                });
+
+
+
+
+            });
+
+        </script>
+
+
+    </head>
+    <body>
+        <ul class="social-buttons">
+            <li class="social-buttons__item"><a class="ico ico_fb" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_vk" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_tw" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
+        </ul>
+
+        <div class="wrapper">
+            <div class="header"> <!-- header -->
+                <div class="container">
+                    <a href="/" class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></a>
+                    <span class="slogan">Всероссийская система онлайн-займов</span>
+
+                    <ul class="menu menu_main">
+                        <li class="menu__item">
+                            <a href="#">О проекте</a>
+                            <ul class="menu submenu">
+                                <li class="menu__item"><a href="#">Сертификаты</a></li>
+                                <li class="menu__item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#">Как получить?</a></li>
+                        <li class="menu__item"><a href="#">Как погасить?</a></li>
+                        <li class="menu__item"><a href="#">Новости</a></li>
+                    </ul>
+
+                    <div class="header-links">
+                        <span class="header-links__call">
+                            <a class="order-call" href="#">Заказать звонок</a>
+                            <i class="header-links__note">Перезвоним в удобное Вам время</i>
+                        </span>
+                        <span class="header-links__personal">
+                            <a class="order-call" href="#">Личный кабинет</a>
+                            <a href="#" class="header-links__note">Добавить в избранное</a>
+                        </span>
+                    </div>
+                </div>
+            </div> <!-- /.header -->
+
+            <div class="main main_columns"> <!-- .main -->
+
+
+
+                <div class="container">
+                    <div class="columns"> <!-- .columns  -->
+                        <div class="column-left"> <!-- .column-left  -->
+                            <div class="slider" id="slider">
+                                <div class="slides_container slides-list">
+                                    <div class="slides-list__item">
+                                        <div class="slide-img"><img src="images/teaser1.png" alt="" title="" /></div>
+                                        <h2 class="slide-title">ДЕНЬГИ ЗА&nbsp;15&nbsp;МИНУТ</h2>
+                                        <p class="slide-text">конфиденциально
+                                            <small>и без документов</small>
+                                        </p>
+                                    </div>
+                                    <div class="slides-list__item slides-list__item_2">
+                                        <div class="slide-img">  <img src="images/teaser2.png" alt="" title="" /></div>
+                                        <h2 class="slide-title"> пополни онлайн&nbsp;-&nbsp;кошелек</h2>
+                                        <p class="slide-text">просто и быстро &mdash;
+                                            <small>отдашь потом</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="condition">
+                                <h3 class="condition__title"><i class="condition__title-star">*</i><a href="#">Обязательные условия получения займа</a></h3>
+                                <div class="condition__text">
+                                    Нужен: <a href="#">Сертификат WebMoney</a><br/>
+                                    или аккаунт в соцсетях: <br/>
+                                    <a href="#">«Вконтакте»</a><br/>
+                                    или <a href="#">«Одноклассники»</a>
+                                </div>
+                            </div>
+                        </div> <!-- /.column-left  -->
+                        <div class="column-right"> <!-- .column-right  -->
+                            <div class="column-head">
+                                <ul class="breadcumbs">
+                                    <li><a href="#">Главная</a></li><li>/</li> <li><a href="#">Регистрация</a></li> <li>/</li><li><a href="#">Личные данные</a></li> <li>/...</li>
+                                </ul>
+                                <h1 class="page-title">Регистрация</h1>
+                                <ul class="form-progress">
+                                    <li class="form-progress_step1 ready"><a href="#">Личные данные</a></li>
+                                    <li class="form-progress_step2 ready"><a href="#">Данные карты</a></li>
+                                    <li class="form-progress_step3"><a href="#">Заключение договора</a></li>
+                                </ul>
+                            </div>
+                            <div class="column-content">
+                                <form class="form form_register">
+                                    <ul class="fields-list">
+                                        <li class="fields-list__item">
+                                            <label>Фамилия: <i class="required">*</i></label>
+                                            <input class="field field_text" name="fLastName" type="text"/>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Имя: <i class="required">*</i></label>
+                                            <input class="field field_error field_text" name="fName" type="text"/>
+                                            <div class="error-box">
+                                                <label>Ошибка</label>
+                                                <div class="error-text">Заполните поле</div>
+                                            </div>
+                                        </li>                                        
+                                        <li class="fields-list__item">
+                                            <label>Отчество: <i class="required">*</i></label>
+                                            <input class="field field_text" name="fSecondName" type="text"/>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Дата рождения: <i class="required">*</i></label>
+                                            <input class="field field_text field_data" name="fBirthDate" id="fBirthDate" type="text"/>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Место рождения: <i class="required">*</i></label>
+                                            <textarea class="field field_textarea" cols="2" rows="2"></textarea>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Паспорт: <i class="required">*</i></label>
+                                            <input class="field field_text_short" name="fPassport1" type="text"/>
+                                            <input class="field field_text_short" name="fPassport2" type="text"/>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Кем выдан: <i class="required">*</i></label>
+                                            <textarea class="field field_textarea" cols="2" rows="2"></textarea>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            <label>Дата выдачи: <i class="required">*</i></label>
+                                            <input class="field field_text field_data" name="fPassportDate" id="fPassportDate" type="text"/>
+                                        </li>
+                                        <li class="fields-list__item">
+                                            
+                                            
+                                            <ul class="fields-list">
+                                                
+                                                <li class="fields-list__item">                                                    
+                                                     <label>Адрес регистрации: <i class="required">*</i></label>
+                                                   <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
+                                                </li>
+                                                <li class="fields-list__item">	
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_autocomplete field_autocomplete_city"  type="text" placeholder="Город"/>
+                                                </li>
+                                                <li class="fields-list__item">	
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_autocomplete field_autocomplete_street"  type="text" placeholder="Улица"/>
+                                                </li>
+                                                <li class="fields-list__item">			
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Дом"/>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>                                                    
+                                                </li>
+                                                <li class="fields-list__item">		
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
+                                                    <input class="field field_text_short"  type="text" placeholder="Индекс"/>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+
+                                        <li class="fields-list__item fields-list__item_address_radio">
+                                            <label>Фактический адрес совпадает <br />с адресом регистрации</label>
+                                            <div class="radio-box"><input class="field_radio"  type="radio"/></div>
+                                        </li>
+                                        
+                                          <li class="fields-list__item">
+                                            
+                                            
+                                            <ul class="fields-list">
+                                                
+                                                <li class="fields-list__item">                                                    
+                                                     <label>Адрес регистрации: <i class="required">*</i></label>
+                                                   <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
+                                                </li>
+                                                <li class="fields-list__item">	
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_autocomplete field_autocomplete_city"  type="text" placeholder="Город"/>
+                                                </li>
+                                                <li class="fields-list__item">	
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_autocomplete field_autocomplete_street"  type="text" placeholder="Улица"/>
+                                                </li>
+                                                <li class="fields-list__item">			
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Дом"/>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>                                                    
+                                                </li>
+                                                <li class="fields-list__item">		
+                                                    <label><i class="required">*</i></label>
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
+                                                    <input class="field field_text_short"  type="text" placeholder="Индекс"/>
+                                                </li>
+                                                
+
+                                            </ul>
+                                        </li>
+                                        
+                                        <li class="fields-list__item">
+                                            <label>Мобильный телефон: <i class="required">*</i></label>
+                                            <input class="field field_text"  type="text"/>
+                                        </li>
+                                        
+                                        <li class="fields-list__item">
+                                            <label>Домашний телефона: </label>
+                                            <input class="field field_text" type="text"/>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="btnset">
+                                        <input type="button" value="Назад" class="btn-prev"/>
+                                        <input type="button" value="Назад" class="btn-next"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!--/.column-right  -->
+                    </div> <!-- /.columns  -->
+
+                </div>
+            </div>  <!-- /.main -->
+        </div>
+
+        <div class="footer"> <!-- .footer -->
+
+            <div class="footer-columns container">
+                <div class="footer-column__item footer-column__item_logos">
+                    <img src="images/bg/card-logos1.png" />
+                    <img src="images/bg/card-logos2.png" />
+                    <img src="images/bg/card-logos3.png" />
+                    <img src="images/bg/card-logos3.png" />
+                    <img src="images/bg/card-logos1.png" />
+                    <img src="images/bg/card-logos2.png" />
+                    <img src="images/bg/card-logos3.png" />
+                    <img src="images/bg/card-logos3.png" />
+                </div>
+                <div class="footer-column__item">
+                    За все время работы, опираясь на принципы честного и
+                    ответственного ведения бизнеса, компания зарекомендовала
+                    себя как надежный партнер в отношениях с каждым из клиентов,
+                    что сделало ее одним из лидеров в сфере
+                </div>
+                <div class="footer-column__item">
+                    За все время работы, опираясь на принципы честного и
+                    ответственного ведения бизнеса, компания зарекомендовала
+                    себя как надежный партнер в отношениях с каждым из клиентов,
+                    что сделало ее одним из лидеров в сфере
+                </div>
+
+                <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+            </div>
+
+        </div> <!-- /.footer -->
+
+    </body>
+</html>
+

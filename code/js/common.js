@@ -12,12 +12,8 @@ $(document).ready(function() {
 	max: 15000,
 	step: 500,
 	range: "min",
-	create: function( event, ui ) {
-             $('.range_money .ui-slider-handle').html('<span class="range-label">'+ 1000 + '</span>');
-        },
 	change: function( event, ui ) {
 	    $( "#money" ).val( $( "#range-money-sl" ).slider( "value" ) );
-	    $('.range_money .ui-slider-handle').html('<span class="range-label">'+ $( "#range-money-sl" ).slider( "value" ) + '</span>');
 	}
     });
 
@@ -41,12 +37,8 @@ $(document).ready(function() {
 	max: 30,
 	step: 1,
 	range: "min",
-	create: function( event, ui ) {
-             $('.range_days .ui-slider-handle').html('<span class="range-label">'+ 2 + '</span>');
-        },
 	change: function( event, ui ) {
 	    $( "#days" ).val( $( "#range-days-sl" ).slider( "value" ) );
-	    $('.range_days .ui-slider-handle').html('<span class="range-label">'+ $( "#range-days-sl" ).slider( "value" ) + '</span>');
 	}
     });
 
@@ -61,6 +53,24 @@ $(document).ready(function() {
     $('.range_days .range-buttons_down').click(function() {
 	d.slider('value', d.slider('value') - d.slider( "option", "step" ) );
 
+    });
+
+
+    var p = $('#payment-type-sl').slider({
+	value:1,
+	min:1,
+	max:2,
+	step:1,
+	change: function( event, ui ) {
+	    if(p.slider('value') == 2){
+		$('.payment-type-kiwi').removeClass('active');
+		$('.payment-type-card').addClass('active');
+	    }
+	    else {
+		$('.payment-type-kiwi').addClass('active');
+		$('.payment-type-card').removeClass('active');
+	    }
+	}
     });
 
 

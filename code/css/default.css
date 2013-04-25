@@ -133,7 +133,8 @@ ul li {
 .columns:after,
 .promo:after,
 .container:after,
-.range:after {
+.range:after, 
+.fields-list__item:after {
     content: ".";
     display: block;
     height: 0;
