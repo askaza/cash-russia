@@ -893,19 +893,21 @@ body {
 }
 .fields-list__item .fields-list {
     margin-top: 10px;  
+    padding-left: 215px;
 }
 
 .fields-list__item label {
-    float: left;
     color: #575756;
+    float: left;
     font-family: 'Tahoma';
-    font-size:18px;
-    min-height: 38px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 21px;
+    min-height: 32px;
     padding-right: 33px;
-    text-align: right;
+    padding-top: 5px;
     position: relative;
-    width: 182px;
+    text-align: right;
+    width: 182px
 }
 .fields-list__item .required {
     position: absolute;
