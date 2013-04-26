@@ -909,15 +909,6 @@ body {
     text-align: right;
     width: 182px
 }
-.fields-list__item .required {
-    position: absolute;
-    color:#e20613;
-    font-style:  normal;
-    font-size: 18px;
-    position: absolute;
-    right: 4px;
-    top:-17px;
-}
 
 .fields-list__item .field {
     color: #231f20;
