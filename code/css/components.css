@@ -264,6 +264,17 @@ body {
     font-size: 30px;
     letter-spacing: 0px;
 }
+.slides-list__item_3 .slide-text {
+    font-size: 30px;
+}
+.slides-list__item_3 small {
+    font-size: 24px;
+}
+.slides-list__item_3 img {
+    left: 40px;
+    margin-top: 0;
+    top: 27px;
+}
 
 .slide-text {
     font-family: 'pf_beausans_prothin';
@@ -613,8 +624,8 @@ body {
 .condition {
     float: left;
     width: 340px;
-    padding: 66px 25px 1000px 37px;
-    margin-bottom: -1000px;
+    padding: 66px 25px 10000px 37px;
+    margin-bottom: -10000px;
     background: #ececec;
 }
 .condition__text {
@@ -683,8 +694,8 @@ body {
 .action {
     background: url(../images/bg/action.png) no-repeat 0 0;
     position: absolute;
-    height: 269px;
-    width: 248px;
+    height: 268px;
+    width: 252px;
     right: -6px;
     bottom:0;
 }
@@ -753,7 +764,7 @@ body {
     position: relative;
     padding-top: 22px;
     height: 160px;
-    overflow: hidden;    
+    overflow: hidden;
 }
 .column-content {
     padding-top: 15px;
@@ -772,8 +783,11 @@ body {
 }
 .column-left .condition {
     padding-right: 10px;
-    padding-top: 125px;
+    padding-top: 133px;
     width: 345px;
+}
+.column-left .condition__text {
+    padding-bottom: 54px;
 }
 
 .column-right {
@@ -854,7 +868,7 @@ body {
 /* breadcrumbs < */
 
 .breadcumbs {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     padding: 0;
     letter-spacing: -3px;
 }
@@ -892,7 +906,7 @@ body {
     list-style: none;
 }
 .fields-list__item .fields-list {
-    margin-top: 10px;  
+    margin-top: 10px;
     padding-left: 215px;
 }
 
@@ -931,7 +945,7 @@ body {
     border-bottom: 2px solid #1b7cbf;
 }
 
-.fields-list__item .field_error, 
+.fields-list__item .field_error,
 .fields-list__item .field_error:focus {
     border-color:#e20613;
 }
@@ -978,7 +992,7 @@ body {
     border-bottom: 2px solid #1b7cbf !important;
 }
 
-.ui-datepicker .ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-prev,
 .ui-datepicker .ui-datepicker-next   {
     display: none !important;
 }
@@ -988,7 +1002,7 @@ body {
 }
 
 .ui-datepicker .ui-state-default,
-.ui-datepicker .ui-widget-content .ui-state-default, 
+.ui-datepicker .ui-widget-content .ui-state-default,
 .ui-datepicker .ui-widget-header .ui-state-default {
     background: none !important;
     border: 0 !important;
@@ -1039,7 +1053,7 @@ body {
 }
 
 .ui-datepicker-title {
-    margin:0 !important; 
+    margin:0 !important;
     margin-left: -2px !important;
     height: 25px !important;
 }
@@ -1111,10 +1125,10 @@ body {
  */
 
 .jspContainer
-{       
+{
     background: #fff;
     overflow: hidden;
-    position: relative;     
+    position: relative;
 }
 
 .jspPane
@@ -1128,7 +1142,7 @@ body {
     top: 0;
     right: 3px;
     width: 20px;
-    height: 100%;	
+    height: 100%;
     border-color: #486E99 #006CB5 #1B7CBF !important;
     border-style: solid !important;
     border-width: 0 2px 0 2px!important;
@@ -1227,7 +1241,7 @@ body {
 .ui-datapicker .jspContainer {
     width:125px !important;
 }
-.jspPane ul, 
+.jspPane ul,
 .jspPane ul li {
     list-style: none;
     margin: 0;
@@ -1243,7 +1257,7 @@ body {
     padding: 4px 8px;
     text-align: left;
 }
-.jspPane ul li:hover, 
+.jspPane ul li:hover,
 .jspPane ul li.selected {
     background: #d9d9d9;
 }
@@ -1262,7 +1276,7 @@ body {
 
 .ui-menu-item {
     list-style:  none outside;
-    display: block;    
+    display: block;
 }
 .ui-menu-item a {
     display: block;
@@ -1327,4 +1341,154 @@ body {
     background: url(../images/bg/btn-next.png) no-repeat 0 0;
     width: 118px;
     left:215px;
+}
+
+/* text page */
+
+.promo-banner {
+    clear: both;
+    margin: 30px 27px 40px;
+}
+.promo-banner__content {
+     background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 0 0;
+    height: 217px;
+    padding: 20px 10px;
+    position: relative;
+    text-align: left;
+    z-index: 10;
+}
+
+.promo-banner img {
+    max-width: 310px;
+}
+.promo-banner__title {
+    background: url(../images/bg/promo-banner-title.png) no-repeat 50% 0;
+    width: 357px;
+    height: 57px;
+    position: relative;
+    margin: -10px -10px 0 -10px;
+     color: #FFFFFF;
+    font-family: 'pf_beausans_probold';
+    font-size: 22px;
+    line-height: 52px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.news-list {
+    margin: 0 27px;
+    padding: 0;
+}
+.news-list li {
+    list-style: none outside;
+    padding: 0;
+    margin: 0 0 17px 0;
+}
+.news-title,
+.news-title a {
+    font-family: 'Tahoma';
+    font-size:20px;
+    color:#0073bc;
+    line-height: 22px
+}
+
+.page-head-text {
+     color: #FFFFFF;
+    font-family: 'Tahoma';
+    font-size: 14px;
+    height: 52px;
+    margin-top: -9px;
+    overflow: hidden;
+}
+
+/* content styles */
+
+.pure-content {
+    padding-bottom: 30px;
+    margin-bottom: -10px;
+}
+
+.pure-content h1 {
+    color:#1d1d1b;
+    font-size: 19px;
+    font-family: 'Tahoma';
+    margin-bottom: 10px;
+}
+.pure-content h2 {
+    color:#1d1d1b;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    margin-bottom: 10px;
+}
+.pure-content h3 {
+    color:#1d1d1b;
+    font-size: 16px;
+    font-family: 'Tahoma';
+    margin-bottom: 10px;
+}
+.pure-content h4 {
+    color:#1d1d1b;
+    font-size: 14px;
+    font-family: 'Tahoma';
+    margin-bottom: 5px;
+}
+.pure-content h5 {
+    color:#1d1d1b;
+    font-size: 12px;
+    font-family: 'Tahoma';
+    font-weight: bold;
+     margin-bottom: 5px;
+}
+.pure-content h6 {
+    color:#1d1d1b;
+    font-size: 11px;
+    font-family: 'Tahoma';
+    font-weight: bold;
+     margin-bottom: 5px;
+}
+
+.pure-content p {
+    color:#1d1d1b;
+    font-size: 12px;
+    font-family: 'Tahoma';
+    line-height: 16px;
+}
+
+.pure-content .large-text {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.action_right {
+    position: relative;
+    float: right;
+    margin: 0 0 15px 18px;
+    height: 306px;
+}
+
+.text-columns {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.text-columns p {
+    margin-left: 25px;
+}
+blockquote {
+     background: none repeat scroll 0 0 #006CB5;
+    border-radius: 10px 10px 10px 10px;
+     color: #FFFFFF;
+    display: block;
+    line-height: 17px;
+    margin: 0 0 25px -15px;
+    padding: 10px 23px 14px;
+}
+.text-img_left {
+    float: left;
+    padding: 8px 32px 8px 25px;
+}
+.pure-content ul {
+   overflow: hidden;
+   padding-left: 20px;
 }
