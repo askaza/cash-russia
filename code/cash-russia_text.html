@@ -17,6 +17,7 @@
         <script src="js/jquery.jscrollpane.min.js"></script>
         <script src="js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
         <!--[if lte IE 8 ]>
@@ -27,6 +28,37 @@
 	<script type="text/javascript">
 	    $(function() {
 		$('.text-columns').columnize({ columns:2 });
+
+		$(".field_text_time").mask("99:99", {placeholder:" "});
+
+		 var Mounth = [
+                    "Сентябрь",
+                    "Октябрь",
+                    "Ноябрь",
+		    "Декабрь",
+		    "Январь",
+		    "февраль",
+		    "Март",
+		    "Апрель",
+		    "Май",
+		    "Июнь",
+		    "Август"
+
+                ];
+		$( ".field_text_mounth" ).autocomplete({
+		    appendTo: ".order-call-dropdown",
+		    source: Mounth
+		}
+
+	    );
+
+		  $('.header-links__call').hover(function(){
+		      $('.order-call-dropdown').show();
+		  },
+		  function(){
+		      $('.order-call-dropdown').hide();
+		  });
+
 	    });
 	</script>
 
@@ -67,6 +99,34 @@
                             <a class="order-call" href="#">Личный кабинет</a>
                             <a href="#" class="header-links__note">Добавить в избранное</a>
                         </span>
+			<div class="order-call-dropdown">
+			    <form class="order-call-form" method="post" action="#">
+				<p class="form-note">
+				    С вами свяжется менеджер в удобное для вас время
+				</p>
+				<ul class="fields-list">
+				    <li class="fields-list__item">
+					<label>Представьтесь</label>
+					<input type="text" class="field field_text" name="fName" />
+				    </li>
+				    <li class="fields-list__item">
+					<label>Оставье номер телефона</label>
+					<span class="phone-number-text">+7</span>
+					<input type="text" class="field field_text_code" />
+					<span class="phone-number-text">-</span>
+					<input type="text" class="field field_text_number" />
+				    </li>
+				     <li class="fields-list__item">
+					<label>Укажите дату и время звонка</label>
+					<input type="text" class="field field_text_mounth" />
+					<input type="text" class="field field_text_num" />
+					<input type="text" class="field field_text_time" />
+				    </li>
+				</ul>
+				<input class="btn-small" type="submit" />
+			    </form>
+			    <i class="corner"></i>
+			</div>
                     </div>
                 </div>
             </div> <!-- /.header -->
@@ -177,7 +237,7 @@
 					 зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов,
 					 что сделало ее одним из лидеров в сфере микрофинансирования.
 				     </blockquote>
-					 
+
 				     <div class="text-columns">
 					 <p>
 					     За все время работы, опираясь на принципы честного и ответственного ведения
@@ -202,7 +262,7 @@
 					 </div>
 				     </div>
 				     <div class="text-columns">
-					<p class="large-text">За все время работы, опираясь на принципы честного и ответственного ведения
+					<p>За все время работы, опираясь на принципы честного и ответственного ведения
 					    бизнеса, компания зарекомендовала себя как надежный партнер в отношениях
 					    с каждым из клиентов, что сделало ее одним из лидеров в сфере микрофинансирования.
 					    Получить мини займы можно на прозрачных и простых условиях, которые включают

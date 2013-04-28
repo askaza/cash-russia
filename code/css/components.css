@@ -63,6 +63,7 @@ body {
 .header-links {
     float: right;
     padding-top: 10px;
+    position: relative;
 }
 .header-links > span {
     float: left;
@@ -1491,4 +1492,132 @@ blockquote {
 .pure-content ul {
    overflow: hidden;
    padding-left: 20px;
+}
+
+/* order call */
+
+.order-call-dropdown {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border: 3px solid #006CB5;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    left: 11px;
+    padding: 10px 25px;
+    position: absolute;
+    top: 45px;
+    width: 164px;
+}
+.order-call-form .form-note {
+    color: #0073bc;
+    font-size:12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+.order-call-form label {
+    color:#878486;
+    font-size: 10px;
+    float: none;
+    text-align: left;
+    display: block;
+    padding: 0;
+    margin: 0 0 2px 0;
+    line-height: 14px;
+    min-height: 10px;
+    height: auto;
+}
+.order-call-form .field {
+    background: #fff;
+    border-radius: 4px;
+    border:1px solid #e2e1e2;
+    color:#2b2422;
+    font-size:12px;
+    line-height: normal;
+    padding: 1px 5px;
+    width: 152px;
+}
+.order-call-form .field:focus {
+    border:1px solid #757575;
+    box-shadow: -3px 3px 4px #bbbbbb;
+}
+.order-call-form .fields-list__item {
+    margin-bottom: 5px;
+     text-align: right;
+}
+
+.phone-number-text {
+    display: inline;
+    font-size: 12px;
+}
+.order-call-form .field_text_code {
+    width: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.order-call-form .field_text_number {
+    width: 78px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.order-call-form .field_text_mounth {
+    width: 62px;
+    display: inline-block;
+    vertical-align: top;
+}
+.order-call-form .field_text_num{
+    width: 17px;
+    display: inline-block;
+    vertical-align: top;
+}
+.order-call-form .field_text_time {
+    width: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.order-call-dropdown {
+    display: none;
+}
+.order-call-dropdown .ui-autocomplete {
+    border:1px solid #E2E1E2 !important;
+     background: none repeat scroll 0 0 #FFFFFF !important;
+    border-radius: 0 0 4px 4px !important;
+    color: #2B2422 !important;
+    font-size: 12px !important;
+    line-height: normal !important;
+    width: 62px !important;
+     min-width: 72px !important;
+     max-height: 500px !important;
+}
+.order-call-dropdown .ui-menu-item {
+    margin-bottom: 3px !important;
+}
+.order-call-dropdown .ui-menu-item a {
+    color: #2B2422 !important;
+    font-size: 12px !important;
+     padding: 1px 5px !important;
+    text-decoration: none !important;
+}
+.order-call-dropdown .corner {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background:url(../images/bg/order-form-triangle.png) no-repeat 0 100%;
+    left:100px;
+    top:-25px;
+}
+
+.btn-small {
+    background: url(../images/bg/order-call-btn.png) no-repeat 0 0;
+     border: 0 none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    margin: 12px auto 8px;
+    padding: 2px 0 4px;
+    text-align: center;
+    width: 159px;
+}
+.btn-small:hover {
+    background: url(../images/bg/order-call-btn.png) no-repeat 0 -27px;
+
 }
