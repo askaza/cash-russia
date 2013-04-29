@@ -69,7 +69,9 @@ img, a img {
 a {
     color: #0073bc;
 }
-
+a:hover {
+    text-decoration: none;
+}
 p {
     line-height: 20px;
     margin-bottom: 23px;

@@ -52,14 +52,17 @@
 
 	    );
 
-		  $('.header-links__call').hover(function(){
-		      $('.order-call-dropdown').show();
-		  },
-		  function(){
-		      $('.order-call-dropdown').hide();
+		  $('.header-links__call').click(function(){
+		      $('.order-call-dropdown').fadeIn("slow");	
+                      
 		  });
+                  $('.order-call-dropdown .close-popup').click(function(){
+		      $('.order-call-dropdown').fadeOut("slow");		  
+		  });                  
+
 
 	    });
+            
 	</script>
 
     </head>
@@ -126,6 +129,7 @@
 				<input class="btn-small" type="submit" />
 			    </form>
 			    <i class="corner"></i>
+                            <i class="close-popup">x</i>
 			</div>
                     </div>
                 </div>

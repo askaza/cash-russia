@@ -588,6 +588,9 @@ body {
     position: absolute;
     background: url(../images/bg/payment-types.png) no-repeat 0 0;
 }
+.payment-type-ico input {    
+    visibility: hidden;
+}
 .payment-type-kiwi {
     top:0;
     left:-3px;
@@ -950,7 +953,16 @@ body {
 .fields-list__item .field_error:focus {
     border-color:#e20613;
 }
-
+.errors {
+    margin: 0 0 0 215px;
+    padding: 0;
+}
+.errors li {
+    list-style: none outside;
+    margin-bottom: 2px;
+    color: #E20613;
+    font-size: 12px;
+}
 
 .fields-list__item .field_textarea {
     max-width: 230px;
@@ -1506,6 +1518,7 @@ blockquote {
     position: absolute;
     top: 45px;
     width: 164px;
+    z-index: 100;
 }
 .order-call-form .form-note {
     color: #0073bc;
@@ -1554,7 +1567,7 @@ blockquote {
     vertical-align: top;
 }
 .order-call-form .field_text_number {
-    width: 78px;
+    width: 76px;
     display: inline-block;
     vertical-align: top;
 }
@@ -1604,6 +1617,19 @@ blockquote {
     background:url(../images/bg/order-form-triangle.png) no-repeat 0 100%;
     left:100px;
     top:-25px;
+}
+
+.order-call-dropdown .close-popup {
+    color: #006CB5;
+    cursor: pointer;
+    font-family: 'Tahoma';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0 3px;
+    position: absolute;
+    right: 4px;
+    top: 0;
 }
 
 .btn-small {

@@ -12,7 +12,7 @@ $(document).ready(function() {
 	max: 15000,
 	step: 500,
 	range: "min",
-	change: function( event, ui ) {
+	slide: function( event, ui ) {
 	    $( "#money" ).val( $( "#range-money-sl" ).slider( "value" ) );
 	}
     });
@@ -65,10 +65,14 @@ $(document).ready(function() {
 	    if(p.slider('value') == 2){
 		$('.payment-type-kiwi').removeClass('active');
 		$('.payment-type-card').addClass('active');
+                $('#kiwi-active').prop('checked',false);
+                $('#card-active').prop('checked',true);
 	    }
 	    else {
 		$('.payment-type-kiwi').addClass('active');
 		$('.payment-type-card').removeClass('active');
+                $('#card-active').prop('checked',false);
+                $('#kiwi-active').prop('checked',true);
 	    }
 	}
     });
