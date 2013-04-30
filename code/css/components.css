@@ -1042,10 +1042,14 @@ body {
 
 .ui-datepicker .jq-selectbox .select {
     background: url(../images/bg/field-bg.png) repeat-x 0 0;
-    height: 26px;
+    height: 25px;
     float:none !important;
     padding-right: 27px;
-    position: relative;
+    position: relative;   
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 84px;
+    border:none;
 }
 
 .ui-datepicker .jq-selectbox .select .text {
@@ -1064,8 +1068,8 @@ body {
 
 .ui-datepicker .jq-selectbox {
     float:left;
-    border-left:2px solid #0066ac;
-    width: 123px;
+    border-left:2px solid #0066ac !important;
+    width: 123px !important;
 }
 .ui-datepicker .jq-selectbox .dropdown {
     width: 123px;
@@ -1075,23 +1079,23 @@ body {
     height: 25px !important;
 }
 
-.ui-datepicker .jq-selectbox .text {
-    height: 25px;
+.ui-datepicker .jq-selectbox .text {    
     height: 25px;
     line-height: 22px;
     padding-left: 5px;
     text-align: left;
+    margin: 0;
 }
 .ui-datepicker .trigger {
-    right: -9px;
-    top: 2px;
+    right: -9px !important;
+    top: 2px !important;
 }
 .ui-datepicker .trigger .arrow {
     background: url(../images/bg/select-arrows.png) no-repeat 0 0;
-    background-size: 20px auto;
+    background-size: 20px auto !important;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 20px !important;
+    width: 20px !important;
 }
 
 .fields-list__item_address_radio label  {
