@@ -453,11 +453,11 @@ body {
 
 .range-buttons {
     float: left;
-    margin: 39px 0 0 2px;
+    margin: 35px 0 0 1px;
     width: 22px;
 }
 .range-buttons_up {
-    background: url(../images/bg/calc-arrows.png) no-repeat 0 0;
+    background: url(../images/bg/calc-arrows.png) no-repeat -1px 0;
     height: 18px;
     width: 22px;
     text-decoration: none;
@@ -465,15 +465,26 @@ body {
     margin-bottom: 2px;
     cursor: pointer;
 }
+.range-buttons_up:hover {
+   background: url(../images/bg/calc-arrows.png) no-repeat -39px 0; 
+}
+.range-buttons_up:active {
+   background: url(../images/bg/calc-arrows.png) no-repeat -77px 0; 
+}
 .range-buttons_down {
-    background: url(../images/bg/calc-arrows.png) no-repeat 0 -20px;
+    background: url(../images/bg/calc-arrows.png) no-repeat -1px -20px;
     height: 18px;
     width: 22px;
     text-decoration: none;
     display: block;
     cursor: pointer;
 }
-
+.range-buttons_down:hover {
+   background: url(../images/bg/calc-arrows.png) no-repeat -39px -20px; 
+}
+.range-buttons_down:active {
+   background: url(../images/bg/calc-arrows.png) no-repeat -77px -20px; 
+}
 
 .range_money  .range-input input {
     border:2px solid #d0a436;
@@ -547,6 +558,7 @@ body {
     text-shadow: 1px -1px 1px #6F4A1A;
     width: 292px;
     color: #fff;
+    cursor: pointer;
 }
 .submit-btn:hover {
     background: url(../images/bg/calc-btn.png) no-repeat 0 -72px;
@@ -1028,7 +1040,7 @@ body {
     background: #d8d8d8 !important;
 }
 
-.jq-selectbox .select {
+.ui-datepicker .jq-selectbox .select {
     background: url(../images/bg/field-bg.png) repeat-x 0 0;
     height: 26px;
     float:none !important;
@@ -1036,34 +1048,13 @@ body {
     position: relative;
 }
 
-.jq-selectbox .select .text {
+.ui-datepicker .jq-selectbox .select .text {
     color:#585756;
     font-size:18px;
     font-family: 'Tahoma';
     display: block;
 }
-.jq-selectbox .trigger {
-    position: absolute;
-    right:4px;
-    top:0;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-}
-.jq-selectbox .trigger .arrow {
-    background: url(../images/bg/select-arrows.png) no-repeat 0 0;
-    display: block;
-    height: 32px;
-    width: 32px;
-}
-.jq-selectbox .dropdown {
-    max-height: 152px;
-    border-color: #486E99 #006CB5 #1B7CBF #006CB5 !important;
-    border-style: solid !important;
-    border-width: 2px !important;
-    border-top:0;
-    width: 100%;
-}
+
 
 .ui-datepicker-title {
     margin:0 !important;
@@ -1117,7 +1108,7 @@ body {
 }
 .jq-radio {
     display: block;
-    background: url(../images/bg/radio.png) no-repeat 0 0;
+    background: url(../images/bg/chbox.png) no-repeat 0 0;
     height: 21px;
     width: 21px;
 }
@@ -1126,6 +1117,66 @@ body {
     background-position: -25px 0;
 }
 
+.jq-checkbox {
+    display: block;
+    background: url(../images/bg/chbox.png) no-repeat 0 -27px;
+    height: 21px;
+    width: 21px;
+    margin-top: 2px;
+}
+.jq-checkbox.checked {
+    background-position: -25px -27px;
+}
+
+.jq-selectbox .select {
+    background: url("../images/bg/field-bg.png") repeat-x scroll 0 0 #E0E0DF;
+    border-color: #8B8B89 #AAAAA9 #D7D7D7;
+    border-style: solid;
+    border-width: 2px;
+    color: #231F20;
+    font-family: 'Tahoma';
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px 9px;
+    height: 23px;
+    width: 230px;
+}
+
+.jq-selectbox .trigger {
+    position: absolute;
+    right:4px;
+    top:0;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+.jq-selectbox .text {
+    margin-right: 35px;
+    white-space: nowrap;
+}
+.jq-selectbox .trigger .arrow {
+    background: url(../images/bg/select-arrows.png) no-repeat 0 0;
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+.jq-selectbox .dropdown {
+    max-height: 152px;
+    border-color: #486E99 #006CB5 #1B7CBF #006CB5 !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-top:0;
+    width: 100%;
+}
+
+
+#atworks-styler .select {
+    width: 350px;
+}
+
+#homes-styler {
+    width: 350px; 
+}
 /* form styles > */
 
 
@@ -1646,4 +1697,265 @@ blockquote {
 .btn-small:hover {
     background: url(../images/bg/order-call-btn.png) no-repeat 0 -27px;
 
+}
+
+/* profile */
+.columns_profile .column-left {
+    padding-top: 0;
+    padding-bottom: 40px;
+    width: 393px;
+}
+.welcome-box {
+    background:  url(../images/bg/profile-bg.png) no-repeat 0 100%;
+    width: 329px;
+    height: 217px;
+    padding: 25px 20px 50px 45px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.welcome-box__title {
+    color:#fff;
+    font-weight: bold;
+    font-size: 28px; 
+    text-decoration: underline;
+    margin-bottom: 8px;
+    line-height: 32px;
+}
+
+.welcome-text {
+    color:#575756;
+    font-size: 12px;
+}
+.welcome-text p {
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+.welcome-text small {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 4px;
+}
+.welcome-text .username {
+    color:#fff;
+    font-size:18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.welcome-box .btnset {
+    margin: 0;
+}
+.welcome-box .btnset .btn-small {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    background-position: 50% 0;
+    height: 23px;
+    line-height: 22px;
+    width: auto;
+    text-decoration: none;
+    border-radius:5px;
+    margin: 0 5px 0 0;
+}
+.welcome-box .btnset .btn-small:hover {
+    background-position: 50% -27px;   
+}
+
+.loan-box {
+    background: #ececec;
+    padding: 80px 13px 15px 13px;
+    margin-bottom: 12px;
+    border-radius: 0 0 35px 35px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+}
+.loan-box__title {
+    background: url(../images/bg/loan-title.png) no-repeat 0 0;
+    width: 341px;
+    height: 39px;
+    text-align: left;
+    color:#fff;
+    font-size: 19px;
+    line-height: 37px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.loan-table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: left;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.loan-table td, 
+.loan-table th {
+    padding: 5px 0 5px 6px;
+    border-left: 1px dotted #8e8e8e;
+    font-size:13px;
+    color:#868686;
+}
+
+
+.loan-table tr td:first-child, 
+.loan-table tr th:first-child {
+    border-left:0;
+}
+
+.loan-table tbody tr:nth-child(even) td {  
+    background: #c6c6c5;
+}
+
+.loan-table tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.loan-table tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.extend-btn {
+    display: inline-block;
+    vertical-align: top;
+    text-indent:-9999px;
+    background: url(../images/bg/extend-loan.png) no-repeat 0 0;
+    width: 166px;
+    height: 28px;
+    margin-top: 5px;    
+}
+
+.remain {
+    color:#e8741b;
+    font-weight: bold;
+    font-size: 13px;
+}
+.remain small {
+   font-size:12px;
+    color:#868686; 
+}
+
+.loan-table_active tbody tr:nth-child(odd) td {
+    color: #000;
+    background: #c6c6c5;
+}
+.loan-table_active tbody tr:nth-child(even) td {
+    color: #000;
+    background: #ECECEC;
+}
+
+.loan-table_active tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.loan-table_active tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+
+.loan-table_active .end-date, 
+.loan-table_active .end-summ {
+    color:#005daa;
+}
+.ico-time {
+    background: url(../images/bg/time-ico.png) no-repeat 0 0;
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ico-check {
+    background: url(../images/bg/check-ico.png) no-repeat 0 0;
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loan-box__subtitle {
+    color:#575756;
+    font-size: 19px;
+    margin-bottom: 7px;
+    margin-left: 35px;
+}
+
+.change-profile-link {
+    display: block;
+    margin: 0 80px 0 30px;
+}
+.loan-info {
+    margin-top: 13px;
+}
+.loan-info .range {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    margin-left: 18px;
+}
+.loan-info .range:first-child {
+    margin-left: 0;
+}
+.loan-info .range-input {
+    float: none;
+    width: auto;
+}
+
+.loan-info .range_days input {
+    width: 120px;
+    color: #575756;
+}
+.loan-info .persent {
+    margin-top: -2px;    
+}
+.loan-info .persent__value {
+    color:#ffdd00;
+    font-size: 23px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.calc_active-user {
+    margin-bottom: 40px;
+}
+
+.calc_active-user .calc__title {
+    margin-bottom: 13px;
+}
+
+.calc_active-user .submit-btn {
+    margin-top: 8px;
+}
+
+.fields-list__item .radiobtn-group-title {
+    text-align: left;
+}
+.radiobtn-group {
+    overflow: hidden;
+    clear: both;
+    width: 100%;
+    padding-top: 20px;
+}
+.radiobtn-group label {
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: auto;
+    line-height: 17px;
+    margin-bottom: 5px;
+    min-height: 23px;
+    padding: 0 0 0 30px;
+    position: relative;
+    text-align: left;
+    width: 230px;
+}
+.radiobtn-group .jq-radio {
+    position: absolute;
+    left:0;
+    top:0;
+}
+@-moz-document url-prefix() {
+	input.submit-btn {
+		padding-bottom: 5px;
+	}
 }

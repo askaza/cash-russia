@@ -14,6 +14,9 @@ $(document).ready(function() {
 	range: "min",
 	slide: function( event, ui ) {
 	    $( "#money" ).val( $( "#range-money-sl" ).slider( "value" ) );
+	},
+        change: function( event, ui ) {
+	    $( "#money" ).val( $( "#range-money-sl" ).slider( "value" ) );
 	}
     });
 
@@ -37,7 +40,10 @@ $(document).ready(function() {
 	max: 30,
 	step: 1,
 	range: "min",
-	change: function( event, ui ) {
+	slide: function( event, ui ) {
+	    $( "#days" ).val( $( "#range-days-sl" ).slider( "value" ) );
+	}, 
+       change: function( event, ui ) {
 	    $( "#days" ).val( $( "#range-days-sl" ).slider( "value" ) );
 	}
     });
