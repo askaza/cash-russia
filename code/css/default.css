@@ -62,7 +62,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner
 /* fonts  > */
 
 body {
-    font-family:  'Tahoma' ,  'Arial', 'Helvetica', 'Geneva', sans-serif;
+    font-family:  'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;
     font-size:14px;
     color: #000101;
     line-height: 1.2;

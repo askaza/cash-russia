@@ -815,7 +815,7 @@ body {
 
 .page-title {
     color:#fff;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-weight: bold;
     font-size:28px;
     margin-bottom: 15px;
@@ -840,7 +840,7 @@ body {
 .form-progress li a {
     color:#fff;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -896,12 +896,12 @@ body {
     list-style: none outside;
     color: #fff;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
 }
 .breadcumbs li a {
     color: #fff;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
 }
 /* breadcrumbs > */
 
@@ -929,7 +929,7 @@ body {
 .fields-list__item label {
     color: #575756;
     float: left;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 18px;
     line-height: 21px;
     min-height: 32px;
@@ -943,7 +943,7 @@ body {
 .fields-list__item .field {
     color: #231f20;
     font-size: 18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     line-height: 20px;
     background: url(../images/bg/field-bg.png) repeat-x 0 0 #e0e0df;
     padding:  5px 9px;
@@ -1033,7 +1033,7 @@ body {
     border: 0 !important;
     color: #70706e !important;
     font-weight: normal !important;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     text-align: center;
 }
 .ui-datepicker .ui-state-active {
@@ -1055,7 +1055,7 @@ body {
 .ui-datepicker .jq-selectbox .select .text {
     color:#585756;
     font-size:18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     display: block;
 }
 
@@ -1074,6 +1074,7 @@ body {
 .ui-datepicker .jq-selectbox .dropdown {
     width: 123px;
     margin-left: -2px;
+    margin-top: 0;
 }
 .ui-datepicker .jq-selectbox .select {
     height: 25px !important;
@@ -1138,7 +1139,7 @@ body {
     border-style: solid;
     border-width: 2px;
     color: #231F20;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 18px;
     line-height: 20px;
     padding: 5px 9px;
@@ -1149,7 +1150,7 @@ body {
 .jq-selectbox .trigger {
     position: absolute;
     right:4px;
-    top:0;
+    top:2px;
     height: 32px;
     width: 32px;
     cursor: pointer;
@@ -1157,6 +1158,12 @@ body {
 .jq-selectbox .text {
     margin-right: 35px;
     white-space: nowrap;
+    text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis; 
+  overflow: hidden;
+  height: 25px;
+  width: 195px;
 }
 .jq-selectbox .trigger .arrow {
     background: url(../images/bg/select-arrows.png) no-repeat 0 0;
@@ -1170,6 +1177,7 @@ body {
     border-style: solid !important;
     border-width: 2px !important;
     border-top:0;
+    margin-top: 37px;
     width: 100%;
 }
 
@@ -1178,8 +1186,33 @@ body {
     width: 350px;
 }
 
-#homes-styler {
-    width: 350px; 
+#homes-styler .select, 
+#familys-styler .select, 
+#atworks-styler .select, 
+#poss-styler .select {
+    width: 290px; 
+}
+#homes-styler .select .text, 
+#familys-styler .select .text, 
+#atworks-styler .select .text, 
+#poss-styler .select .text {
+    width: 263px;
+}
+
+#childrenss-styler .select, 
+#educations-styler .select, 
+#works-styler .select {
+    width: 195px;
+}
+
+#childrenss-styler .select .text, 
+#educations-styler .select .text, 
+#works-styler .select .text {
+    width: 170px;
+}
+
+.form_register .jq-checkbox {
+    margin-top: 11px;
 }
 /* form styles > */
 
@@ -1319,7 +1352,7 @@ body {
 .jspPane ul li {
     color: #6F6F6E;
     display: block;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 14px;
     line-height: 15px;
     padding: 4px 8px;
@@ -1352,7 +1385,7 @@ body {
     margin:0!important;
     color: #6F6F6E !important;
     display: block;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 14px !important;
     line-height: 15px !important;
     padding: 4px 8px !important;
@@ -1456,7 +1489,7 @@ body {
 }
 .news-title,
 .news-title a {
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size:20px;
     color:#0073bc;
     line-height: 22px
@@ -1464,7 +1497,7 @@ body {
 
 .page-head-text {
      color: #FFFFFF;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 14px;
     height: 52px;
     margin-top: -9px;
@@ -1481,38 +1514,38 @@ body {
 .pure-content h1 {
     color:#1d1d1b;
     font-size: 19px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     margin-bottom: 10px;
 }
 .pure-content h2 {
     color:#1d1d1b;
     font-size: 18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     margin-bottom: 10px;
 }
 .pure-content h3 {
     color:#1d1d1b;
     font-size: 16px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     margin-bottom: 10px;
 }
 .pure-content h4 {
     color:#1d1d1b;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     margin-bottom: 5px;
 }
 .pure-content h5 {
     color:#1d1d1b;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-weight: bold;
      margin-bottom: 5px;
 }
 .pure-content h6 {
     color:#1d1d1b;
     font-size: 11px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-weight: bold;
      margin-bottom: 5px;
 }
@@ -1520,7 +1553,7 @@ body {
 .pure-content p {
     color:#1d1d1b;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     line-height: 16px;
 }
 
@@ -1677,7 +1710,7 @@ blockquote {
 .order-call-dropdown .close-popup {
     color: #006CB5;
     cursor: pointer;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;;
     font-size: 17px;
     font-style: normal;
     font-weight: bold;
@@ -1958,6 +1991,17 @@ blockquote {
     left:0;
     top:0;
 }
+.radiobtn-group_inline {
+    clear: none;
+    overflow: hidden;
+    padding-top: 8px;
+    width: 405px;
+}
+.radiobtn-group_inline label {
+    width: auto;
+    margin-right: 20px;
+}
+
 @-moz-document url-prefix() {
 	input.submit-btn {
 		padding-bottom: 5px;
