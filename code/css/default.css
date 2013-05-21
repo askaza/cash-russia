@@ -53,10 +53,21 @@ input, textarea, abbr, form, fieldset {
 
 }
 
+@font-face {
+    font-family: 'Conv_tahoma';
+    src: url('fonts/10233.eot');
+    src: url('fonts/10233.eot?#iefix') format('embedded-opentype'),
+	url('fonts/10233.woff') format('woff'),
+	url('fonts/10233.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* fonts  > */
 
 body {
-    font-family:  'Tahoma' ,  'Arial', 'Helvetica', 'Geneva', sans-serif;
+    font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size:14px;
     color: #000101;
     line-height: 1.2;
@@ -135,7 +146,7 @@ ul li {
 .columns:after,
 .promo:after,
 .container:after,
-.range:after, 
+.range:after,
 .fields-list__item:after {
     content: ".";
     display: block;

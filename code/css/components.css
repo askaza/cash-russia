@@ -588,7 +588,7 @@ body {
     position: absolute;
     background: url(../images/bg/payment-types.png) no-repeat 0 0;
 }
-.payment-type-ico input {    
+.payment-type-ico input {
     visibility: hidden;
 }
 .payment-type-kiwi {
@@ -803,7 +803,7 @@ body {
 
 .page-title {
     color:#fff;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-weight: bold;
     font-size:28px;
     margin-bottom: 15px;
@@ -828,7 +828,7 @@ body {
 .form-progress li a {
     color:#fff;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     text-align: center;
     text-decoration: none;
     display: block;
@@ -884,12 +884,12 @@ body {
     list-style: none outside;
     color: #fff;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
 }
 .breadcumbs li a {
     color: #fff;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
 }
 /* breadcrumbs > */
 
@@ -917,7 +917,7 @@ body {
 .fields-list__item label {
     color: #575756;
     float: left;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size: 18px;
     line-height: 21px;
     min-height: 32px;
@@ -931,7 +931,7 @@ body {
 .fields-list__item .field {
     color: #231f20;
     font-size: 18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     line-height: 20px;
     background: url(../images/bg/field-bg.png) repeat-x 0 0 #e0e0df;
     padding:  5px 9px;
@@ -1021,7 +1021,7 @@ body {
     border: 0 !important;
     color: #70706e !important;
     font-weight: normal !important;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     text-align: center;
 }
 .ui-datepicker .ui-state-active {
@@ -1039,7 +1039,7 @@ body {
 .jq-selectbox .select .text {
     color:#585756;
     font-size:18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     display: block;
 }
 .jq-selectbox .trigger {
@@ -1264,7 +1264,7 @@ body {
 .jspPane ul li {
     color: #6F6F6E;
     display: block;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size: 14px;
     line-height: 15px;
     padding: 4px 8px;
@@ -1297,7 +1297,7 @@ body {
     margin:0!important;
     color: #6F6F6E !important;
     display: block;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size: 14px !important;
     line-height: 15px !important;
     padding: 4px 8px !important;
@@ -1401,7 +1401,7 @@ body {
 }
 .news-title,
 .news-title a {
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size:20px;
     color:#0073bc;
     line-height: 22px
@@ -1409,7 +1409,7 @@ body {
 
 .page-head-text {
      color: #FFFFFF;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size: 14px;
     height: 52px;
     margin-top: -9px;
@@ -1426,38 +1426,38 @@ body {
 .pure-content h1 {
     color:#1d1d1b;
     font-size: 19px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     margin-bottom: 10px;
 }
 .pure-content h2 {
     color:#1d1d1b;
     font-size: 18px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     margin-bottom: 10px;
 }
 .pure-content h3 {
     color:#1d1d1b;
     font-size: 16px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     margin-bottom: 10px;
 }
 .pure-content h4 {
     color:#1d1d1b;
     font-size: 14px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     margin-bottom: 5px;
 }
 .pure-content h5 {
     color:#1d1d1b;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-weight: bold;
      margin-bottom: 5px;
 }
 .pure-content h6 {
     color:#1d1d1b;
     font-size: 11px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-weight: bold;
      margin-bottom: 5px;
 }
@@ -1465,7 +1465,7 @@ body {
 .pure-content p {
     color:#1d1d1b;
     font-size: 12px;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     line-height: 16px;
 }
 
@@ -1622,7 +1622,7 @@ blockquote {
 .order-call-dropdown .close-popup {
     color: #006CB5;
     cursor: pointer;
-    font-family: 'Tahoma';
+    font-family: 'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: bold;
