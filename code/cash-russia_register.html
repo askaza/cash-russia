@@ -39,7 +39,7 @@
                     });
                 });
 
-                $('.form select, .form input[type="radio"]').styler();
+                $('.form select, .form input[type="radio"], .form input[type="checkbox"]').styler();
                 $('.form .select').click(function() {
                     $(this).next('.dropdown').jScrollPane();
                 });
@@ -232,6 +232,16 @@
                                             <input class="field field_text field_data" name="fPassportDate" id="fPassportDate" type="text"/>
                                         </li>
                                         <li class="fields-list__item">
+                                            <label>Какой-то селект: </label>
+                                            <select>
+                                                <option>asdfdsfdsfdsfds</option>
+                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+                                                <option>afdg sdfgfdg</option>
+                                            </select>
+                                        </li>
+                                        <li class="fields-list__item">
                                             <label>Адрес регистрации: <i class="required">*</i></label>
                                             
                                             <ul class="fields-list">                                                
@@ -262,7 +272,7 @@
 
                                         <li class="fields-list__item fields-list__item_address_radio">
                                             <label>Фактический адрес совпадает <br />с адресом регистрации</label>
-                                            <div class="radio-box"><input class="field_radio"  type="radio"/></div>
+                                            <div class="radio-box"><input class="field_chbox"  type="checkbox"/></div>
                                         </li>
                                         
                                           <li class="fields-list__item">

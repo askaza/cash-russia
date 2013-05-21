@@ -16,8 +16,8 @@
         <script src="js/jquery.formstyler.min.js"></script>
         <script src="js/jquery.jscrollpane.min.js"></script>
         <script src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
-	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="js/jquery.columnizer.js"></script>
+        <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
         <!--[if lte IE 8 ]>
@@ -62,35 +62,35 @@
                             <a class="order-call" href="#">Личный кабинет</a>
                             <a href="#" class="header-links__note">Добавить в избранное</a>
                         </span>
-			<div class="order-call-dropdown">
-			    <form class="order-call-form" method="post" action="#">
-				<p class="form-note">
-				    С вами свяжется менеджер в удобное для вас время
-				</p>
-				<ul class="fields-list">
-				    <li class="fields-list__item">
-					<label>Представьтесь</label>
-					<input type="text" class="field field_text" name="fName" />
-				    </li>
-				    <li class="fields-list__item">
-					<label>Оставье номер телефона</label>
-					<span class="phone-number-text">+7</span>
-					<input type="text" class="field field_text_code" />
-					<span class="phone-number-text">-</span>
-					<input type="text" class="field field_text_number" />
-				    </li>
-				     <li class="fields-list__item">
-					<label>Укажите дату и время звонка</label>
-					<input type="text" class="field field_text_mounth" />
-					<input type="text" class="field field_text_num" />
-					<input type="text" class="field field_text_time" />
-				    </li>
-				</ul>
-				<input class="btn-small" type="submit" />
-			    </form>
-			    <i class="corner"></i>
+                        <div class="order-call-dropdown">
+                            <form class="order-call-form" method="post" action="#">
+                                <p class="form-note">
+                                    С вами свяжется менеджер в удобное для вас время
+                                </p>
+                                <ul class="fields-list">
+                                    <li class="fields-list__item">
+                                        <label>Представьтесь</label>
+                                        <input type="text" class="field field_text" name="fName" />
+                                    </li>
+                                    <li class="fields-list__item">
+                                        <label>Оставье номер телефона</label>
+                                        <span class="phone-number-text">+7</span>
+                                        <input type="text" class="field field_text_code" />
+                                        <span class="phone-number-text">-</span>
+                                        <input type="text" class="field field_text_number" />
+                                    </li>
+                                    <li class="fields-list__item">
+                                        <label>Укажите дату и время звонка</label>
+                                        <input type="text" class="field field_text_mounth" />
+                                        <input type="text" class="field field_text_num" />
+                                        <input type="text" class="field field_text_time" />
+                                    </li>
+                                </ul>
+                                <input class="btn-small" type="submit" />
+                            </form>
+                            <i class="corner"></i>
                             <i class="close-popup">x</i>
-			</div>
+                        </div>
                     </div>
                 </div>
             </div> <!-- /.header -->
@@ -98,122 +98,236 @@
             <div class="main main_columns"> <!-- .main -->
 
                 <div class="container">
-                    <div class="columns"> <!-- .columns  -->
+                    <div class="columns columns_profile"> <!-- .columns  -->
                         <div class="column-left"> <!-- .column-left  -->
-			    <div class="welcome-box">
-				<h1 class="welcome-box__title">Личный кабинет</h1>
-				<div class="welcome-text">
-				    Здравствуйте,
-				    <h2>Андрианополис Павел Андреевич</h2>
-				    <p>Мы можем перевести деньги на Ваш интернет–
-					счет или на дебетовую карту сразу после <a href="#">заполнения заявки</a></p>
-				</div>
-				<div class="btnset">
-				    <a href="#" class="btn-small">Текущий займ</a>
-				    <a href="#" class="btn-small">Настройки</a>
-				</div>
-			    </div>
+                            <div class="welcome-box">
+                                <h1 class="welcome-box__title">Личный кабинет</h1>
+                                <div class="welcome-text">
+                                    <small>Здравствуйте,</small>
+                                    <h2 class="username">Андрианополис<br /> Павел Андреевич</h2>
+                                    <p>Мы можем перевести деньги на Ваш интернет–<br />
+                                        счет или на дебетовую карту сразу после<br /> <a href="#">заполнения заявки</a></p>
+                                </div>
+                                <div class="btnset">
+                                    <a href="#" class="btn-small">Текущий займ</a>
+                                    <a href="#" class="btn-small">Настройки</a>
+                                </div>
+                            </div>
 
-			    <div class="loan-box">
-				
-			    </div>
+                            <div class="loan-box">
+                                <h3 class="loan-box__title">Текущий займ:</h3>
+
+                                <table class="loan-table loan-table_active">
+                                    <col width="26" />
+                                    <col width="80" />
+                                    <col width="60" />
+                                    <col width="80" />
+                                    <col width="65" />
+                                    <thead>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th>Получено</th>
+                                            <th>Сумма</th>
+                                            <th>Погашение</th>
+                                            <th>Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ico-time"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>                                          
+
+                                            <td colspan="3"><a href="#" class="extend-btn">Продлить займ</a></td>
+                                            <td>
+                                                <span class="remain"> 
+                                                    <small class="remain__label">Осталось</small><br/>
+                                                    10 дней
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="remain"> 
+                                                    <small class="remain__label">Осталось</small><br/>
+                                                    10 000 р.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h3 class="loan-box__subtitle">История займов:</h3>
+                                <table class="loan-table">         
+                                    <col width="26" />
+                                    <col width="77" />
+                                    <col width="60" />
+                                    <col width="87" />
+                                    <col width="65" />
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 сентября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>   
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 сентября</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 фпреля</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                            <a href="#" class="change-profile-link">Для изменения личных данных свяжитесь со службой поддержки</a>
                         </div> <!-- /.column-left  -->
+
                         <div class="column-right"> <!-- .column-right  -->
-                            <div class="column-head">
-                                <ul class="breadcumbs">
-                                    <li><a href="#">Главная</a></li><li>/</li> <li><a href="#">Заголовок страницы</a></li><li>/...</li>
-                                </ul>
-                                <h1 class="page-title">Заголовок страницы</h1>
-                                <div class="page-head-text">
-				    Текст 1-го утовня: За все время работы, опираясь на принципы честного
-				    и ответственного ведения бизнеса, компания зарекомендовала себя как
-				    надежный партнер в отношениях с каждым из клиентов, что сделало ее
 
-				</div>
+                            <div class="calc calc_active-user"> <!-- .calc -->
+                                <i class="calc_corner_l"></i>
+                                <i class="calc_corner_r"></i>
+                                <div class="calc__inner">
+                                    <h2 class="calc__title">Сумма займа и выплат</h2>
+                                    <div class="range range_money">
+                                        <div class="range-input">
+                                            <label for="money">Берем:</label>
+                                            <input type="text" name="money" id="money" value="1000" />
+                                        </div>
+                                        <div class="range-buttons">
+                                            <a class="range-buttons_up"></a>
+                                            <a class="range-buttons_down"></a>
+                                        </div>
+                                        <div class="range-slider-wrapper">
+                                            <div class="range-slider-scale">
+                                                <span class="left">1000</span>
+                                                <span class="center">7500</span>
+                                                <span class="right">15000</span>
+                                            </div>
+                                            <div id="range-money-sl" class="range-slider"></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="range range_days">
+                                        <div class="range-input">
+                                            <label for="money">На срок:</label>
+                                            <input type="text" name="days" id="days" value="2" />
+                                            <span>дня</span>
+                                        </div>
+                                        <div class="range-buttons">
+                                            <a class="range-buttons_up"></a>
+                                            <a class="range-buttons_down"></a>
+                                        </div>
+                                        <div class="range-slider-wrapper">
+                                            <div class="range-slider-scale">
+                                                <span class="left">2</span>
+                                                <span class="center">15</span>
+                                                <span class="right">30</span>
+                                            </div>
+                                            <div id="range-days-sl" class="range-slider">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="clearfix loan-info">
+                                        <div class="range range_money">
+                                            <div class="range-input">
+                                                <label>Отдаем:</label>
+                                                <input type="text" name="loan-money" value="17500" />                                                
+                                            </div>
+                                        </div>  
+                                        <div class="range range_days">
+                                            <div class="range-input">
+                                                <label>Когда:</label>
+                                                <input type="text" name="loan-days" value="22.12.2014" />                                                
+                                            </div>
+                                        </div>  
+                                        <div class="range range_persent">
+                                            <div class="range-input">
+                                                <label>Ставка:</label>
+                                                <div class="persent">
+                                                    <span class="persent__value">для Вас 3%</span>
+                                                    <small class="note">Следующий займ будет со ставкой 1,5%</small>
+                                                </div>                                              
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix">
+                                    
+                                        <div class="payment-type-slider">
+                                            <div id="payment-type-sl" class="range-slider"></div>
+                                            <i class="payment-type-ico payment-type-kiwi active"><input type="radio" name="payment-type" id="kiwi-active" checked="checked" /></i>
+                                            <i class="payment-type-ico payment-type-card"><input type="radio" name="payment-type" id="card-active" /></i>
+                                        </div>
+                                  
+                                        <input type="submit" class="submit-btn" value="Получить займ" />
+                                        </div>
+                                </div>
+                            </div> <!-- /.calc -->
+
+
+                            <div class="promo-info">
+                                <div class="confidence">
+                                    <h3 class="confidence__title"><a href="#">Конфиденциальность
+                                            информации</a></h3>
+                                    <div class="confidence__text">
+                                        За все время работы, опираясь на принципы честного и ответственного
+                                        ведения бизнеса, компания зарекомендовала себя как надежный партнер
+                                        в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
+                                        сфере микрофинансирования.
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    <span class="action__terms">приведи друга&mdash;</span>
+                                    <span class="action__price">получи %</span>
+                                    <span class="action__description">
+                                        Каждый приведший в сервис
+                                        своего друга получает Бонус
+                                        на счет в личном кабинете
+                                    </span>
+                                </div>
                             </div>
-                            <div class="column-content">
-				<div class="pure-content">
-				    <h1>Внутренний заголовок</h1>
-				    <h2>Внутренний заголовок</h2>
-				    <h3>Внутренний заголовок</h3>
-				    <h4>Внутренний заголовок</h4>
-				    <h5>Внутренний заголовок</h5>
-				    <h6>Внутренний заголовок</h6>
 
-				    <div class="text-columns">
-					<p class="large-text">За все время работы, опираясь на принципы честного и ответственного ведения
-					    бизнеса, компания зарекомендовала себя как надежный партнер в отношениях
-					    с каждым из клиентов, что сделало ее одним из лидеров в сфере микрофинансирования.
-					    Получить мини займы можно на прозрачных и простых условиях, которые включают
-					    в себя понятную схему погашения, отсутствие поручителей и залога, а также
-					    скрытых платежей и комиссий. Кроме того, несомненным преимуществом является
-					    более низкая комиссия, чем у аналогичных финансовых фирм.За все время работы,
-					    опираясь на принципы честного и ответственного ведения бизнеса, компания
-					    зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов.</p>
-				    </div>
-				     <h1>Цитата</h1>
-				     <blockquote>
-					 Кроме того, несомненным преимуществом является
-					 более низкая комиссия, чем у аналогичных финансовых фирм.За все время работы,
-					 опираясь на принципы честного и ответственного ведения бизнеса, компания
-					 зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов,
-					 что сделало ее одним из лидеров в сфере микрофинансирования.
-				     </blockquote>
-
-				     <div class="text-columns">
-					 <p>
-					     За все время работы, опираясь на принципы честного и ответственного ведения
-					     бизнеса, компания зарекомендовала себя как надежный партнер в отношениях
-					     с каждым из клиентов, что сделало ее одним из лидеров в сфере микрофинансирования.
-					     Получить мини займы можно на прозрачных и простых условиях, которые включают
-					     в себя понятную схему погашения, отсутствие поручителей и залога, а также
-					     скрытых платежей и комиссий. Кроме того, несомненным преимуществом является
-					     более низкая комиссия, чем у аналогичных финансовых фирм.За все время работы,
-					     опираясь на принципы честного и ответственного ведения бизнеса, компания
-					     зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов
-					 </p>
-
-					 <div class="action action_right">
-					     <span class="action__terms">приведи друга&mdash;</span>
-					     <span class="action__price">получи %</span>
-					     <span class="action__description">
-						 Каждый приведший в сервис
-						 своего друга получает Бонус
-						 на счет в личном кабинете
-					     </span>
-					 </div>
-				     </div>
-				     <div class="text-columns">
-					<p>За все время работы, опираясь на принципы честного и ответственного ведения
-					    бизнеса, компания зарекомендовала себя как надежный партнер в отношениях
-					    с каждым из клиентов, что сделало ее одним из лидеров в сфере микрофинансирования.
-					    Получить мини займы можно на прозрачных и простых условиях, которые включают
-					    в себя понятную схему погашения, отсутствие поручителей и залога, а также
-					    скрытых платежей и комиссий. Кроме того, несомненным преимуществом является
-					    более низкая комиссия, чем у аналогичных финансовых фирм.За все время работы,
-					    опираясь на принципы честнипы честного и ответственного ведения бизнеса, компания
-					    зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов,
-					    что сделало ее одним из лидеров в сфере микрофинансирования.  Получить мини
-					    займы можно на прозрачных и простых условиях, которые включают в себя понятную
-					    схему погашения, отсутствие поручителей и залога, а также скрытых платежей и
-					    комиссий. Кроме того, несомненным преимуществом является более низкая комиссия,
-					    чем у аналогичных финансовых фирмого и ответственного ведения бизнеса, компания
-					    зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов,
-					    что сделало ее одним из лидеров в сфере микрофинансирования.  Получить мини
-					    займы можно на прозрачных и простых условиях, которые включают в себя понятную
-					    схему погашения, отсутствие поручителей и залога, а также скрытых платежей и
-					    комиссий. Кроме того, несомненным преимуществом является более низкая комиссия,
-					    чем у аналогичных финансовых фирм.</p>
-				    </div>
-				     <img class="text-img text-img_left" src="images/teaser3.png" alt="" title="" width="220" />
-				     <ul>
-					 <li>Финансовых фирм.За все время работы, опираясь на принципы честного </li>
-					 <li> Финансовых фирм.За все время работы, опираясь на принципы честного</li>
-					 <li>Финансовых фирм.За все время работы, опираясь на принципы честного </li>
-					 <li>Финансовых фирм.За все время работы, опираясь на принципы честного </li>
-				     </ul>
-				</div>
-                            </div>
                         </div> <!--/.column-right  -->
                     </div> <!-- /.columns  -->
 
