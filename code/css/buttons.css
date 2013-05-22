@@ -1,0 +1,136 @@
+.btn {    
+    background: url(../images/bg/buttons.png) repeat-x 0 0;
+    display: inline-block;
+    vertical-align: top;   
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn .btn_in {    
+    border:0;
+    color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+   font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
+}
+
+
+.btn_small {
+    height: 27px;  
+    font-size: 15px;
+    font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
+    line-height: 26px;
+    border-radius: 8px;
+}
+.btn_small .btn_in {
+     padding: 0 12px;
+}
+.btn_small.btn_blue {
+    background-position: 0 0;
+}
+.btn_small.btn_blue:hover {
+    background-position: 0 -27px;
+}
+.btn_small.btn_blue:active {
+    background-position: 0 -54px;
+    color:#e2e5e8;
+}
+
+.btn_small.btn_orange {
+    background-position: 0 -81px;
+}
+.btn_small.btn_orange:hover {
+    background-position: 0 -108px;
+}
+.btn_small.btn_orange:active {
+    background-position: 0 -135px;
+}
+
+.btn_add .btn_in {
+    background: url(../images/bg/btn-add-ico.png) no-repeat 12px 50%;
+    padding: 0 20px 0 38px;
+}
+
+.btn_middle {
+    height: 39px;  
+    font-size: 18px;
+    font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
+    line-height: 38px;
+    border-radius: 10px;
+}
+.btn_middle .btn_in {
+     padding: 0 20px;
+}
+.btn_middle.btn_blue {
+    background-position: 0 -162px;
+}
+.btn_middle.btn_blue:hover {
+    background-position: 0 -201px;
+}
+.btn_middle.btn_blue:active {
+    background-position: 0 -240px;
+    color:#e2e5e8;
+}
+
+.btn_middle.btn_orange {
+    background-position: 0 -279px;
+}
+.btn_middle.btn_orange:hover {
+    background-position: 0 -318px;
+}
+.btn_middle.btn_orange:active {
+    background-position: 0 -357px;
+}
+
+.btn_next .btn_in {
+    background: url(../images/bg/btn-next.png) no-repeat 88% 50%;
+    padding: 0 47px 0 20px;   
+}
+.btn_prev .btn_in {
+     background: url(../images/bg/btn-prev.png) no-repeat 15px 50%;
+    padding: 0 20px 0 47px;
+}
+
+.btn_big {     
+    font-size: 25px;
+    font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
+     height: 54px;
+    line-height: 53px;
+    
+    border-radius: 10px;
+}
+.btn_big .btn_in {
+     padding: 0 50px;
+     text-shadow: 1px -1px 1px #6F4A1A;
+}
+.btn_big.btn_blue {
+    background-position: 0 -558px;
+}
+.btn_big.btn_blue:hover {
+    background-position: 0 -612px;
+}
+.btn_big.btn_blue:active {
+    background-position: 0 -666px;
+    color:#e2e5e8;
+}
+
+.btn_big.btn_orange {
+    background-position: 0 -396px;
+}
+.btn_big.btn_orange:hover {
+    background-position: 0 -450px;
+}
+.btn_big.btn_orange:active {
+    background-position: 0 -504px;
+}
+
+.submit-btn {    
+    float: right;    
+    margin-right: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none; 
+    padding: 0;
+    width: 292px;
+    color: #fff;
+}

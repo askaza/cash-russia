@@ -30,8 +30,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner
     font-family: 'pf_beausans_prolight';
     src: url('fonts/pfbeausanspro-light-webfont.eot');
     src: url('fonts/pfbeausanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/pfbeausanspro-light-webfont.woff') format('woff'),
-         url('fonts/pfbeausanspro-light-webfont.ttf') format('truetype');
+        url('fonts/pfbeausanspro-light-webfont.woff') format('woff'),
+        url('fonts/pfbeausanspro-light-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -41,8 +41,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner
     font-family: 'pf_beausans_probold';
     src: url('fonts/pfbeausanspro-bold-webfont.eot');
     src: url('fonts/pfbeausanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
-         url('fonts/pfbeausanspro-bold-webfont.ttf') format('truetype');
+        url('fonts/pfbeausanspro-bold-webfont.woff') format('woff'),
+        url('fonts/pfbeausanspro-bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -52,17 +52,25 @@ input[type="file"] > input[type="button"]::-moz-focus-inner
     font-family: 'pf_beausans_prothin';
     src: url('fonts/pfbeausanspro-thin-webfont.eot');
     src: url('fonts/pfbeausanspro-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/pfbeausanspro-thin-webfont.woff') format('woff'),
-         url('fonts/pfbeausanspro-thin-webfont.ttf') format('truetype');
+        url('fonts/pfbeausanspro-thin-webfont.woff') format('woff'),
+        url('fonts/pfbeausanspro-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
-
+@font-face {
+    font-family: 'Conv_tahoma';
+    src: url('fonts/10233.eot');
+    src: url('fonts/10233.eot?#iefix') format('embedded-opentype'),
+        url('fonts/10233.woff') format('woff'),
+        url('fonts/10233.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* fonts  > */
 
 body {
-    font-family:  'Tahoma','Helvetica CY', 'Nimbus Sans L', sans-serif;
+    font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     font-size:14px;
     color: #000101;
     line-height: 1.2;
@@ -95,12 +103,12 @@ h3 {
 
 h5 {
 
-font-size: 20px;
-color:#000;
+    font-size: 20px;
+    color:#000;
 }
 
- ul,
- ol {
+ul,
+ol {
     margin: 10px 0 15px 20px;
     padding: 0;
 }
@@ -116,7 +124,7 @@ ul li {
 /* icons  < */
 
 .ico {
-    background: url(../images/bg/socail-icons.png) no-repeat 0 0;
+    background: url(../images/bg/icons.png) no-repeat 0 0;
     display: block;
     vertical-align: top;
     width: 19px;
@@ -133,8 +141,20 @@ ul li {
     background-position: 0 -43px;
 }
 .ico_ok {
-   background-position: 0 -67px;
+    background-position: 0 -67px;
 }
+.message-box_success .ico_hide {
+    background-position: -26px -28px;
+    height: 24px;
+    width: 24px;
+}
+.message-box_error .ico_hide {
+    background-position: -26px 0;
+    height: 24px;
+    width: 24px;
+}
+
+
 /* clear */
 
 .clearfix:after,

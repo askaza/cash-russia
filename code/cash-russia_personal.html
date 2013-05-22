@@ -7,6 +7,7 @@
         <link type="image/png" rel="icon" href="favicon.png" />
 
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
 
@@ -34,7 +35,7 @@
             <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
         </ul>
 
-        <div class="wrapper">
+        <div class="wrapper wrapper_personal">
             <div class="header"> <!-- header -->
                 <div class="container">
                     <a href="/" class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></a>
@@ -109,8 +110,14 @@
                                         счет или на дебетовую карту сразу после<br /> <a href="#">заполнения заявки</a></p>
                                 </div>
                                 <div class="btnset">
-                                    <a href="#" class="btn-small">Текущий займ</a>
-                                    <a href="#" class="btn-small">Настройки</a>
+                                    <span class="btn btn_small btn_blue"><a href="#" class="btn_in">
+                                            Текущий займ
+                                        </a>
+                                    </span>
+                                    <span class="btn btn_small btn_blue"><a href="#" class="btn_in">
+                                            Настройки
+                                        </a>
+                                    </span>                                    
                                 </div>
                             </div>
 
@@ -142,7 +149,10 @@
                                         </tr>
                                         <tr>                                          
 
-                                            <td colspan="3"><a href="#" class="extend-btn">Продлить займ</a></td>
+                                            <td colspan="3"><span class="btn btn_small btn_orange btn_add"><a href="#" class="btn_in">
+                                                    Продлить займ
+                                                </span>
+                                                </a></td>
                                             <td>
                                                 <span class="remain"> 
                                                     <small class="remain__label">Осталось</small><br/>
@@ -267,7 +277,7 @@
 
                                         </div>
                                     </div>
-                                    
+
                                     <div class="clearfix loan-info">
                                         <div class="range range_money">
                                             <div class="range-input">
@@ -293,15 +303,15 @@
                                     </div>
 
                                     <div class="clearfix">
-                                    
+
                                         <div class="payment-type-slider">
                                             <div id="payment-type-sl" class="range-slider"></div>
                                             <i class="payment-type-ico payment-type-kiwi active"><input type="radio" name="payment-type" id="kiwi-active" checked="checked" /></i>
                                             <i class="payment-type-ico payment-type-card"><input type="radio" name="payment-type" id="card-active" /></i>
                                         </div>
-                                  
-                                        <input type="submit" class="submit-btn" value="Получить займ" />
-                                        </div>
+
+                                       <span class="btn btn_big btn_orange submit-btn"><input class="btn_in" type="button"  value="Получить займ" /></span>
+                                    </div>
                                 </div>
                             </div> <!-- /.calc -->
 
@@ -318,13 +328,7 @@
                                     </div>
                                 </div>
                                 <div class="action">
-                                    <span class="action__terms">приведи друга&mdash;</span>
-                                    <span class="action__price">получи %</span>
-                                    <span class="action__description">
-                                        Каждый приведший в сервис
-                                        своего друга получает Бонус
-                                        на счет в личном кабинете
-                                    </span>
+                                    &nbsp;
                                 </div>
                             </div>
 
@@ -333,38 +337,39 @@
 
                 </div>
             </div>  <!-- /.main -->
+            <div class="footer"> <!-- .footer -->
+
+                <div class="footer-columns container">
+                    <div class="footer-column__item footer-column__item_logos">
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+
+                    <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+                </div>
+
+            </div> <!-- /.footer -->
         </div>
 
-        <div class="footer"> <!-- .footer -->
 
-            <div class="footer-columns container">
-                <div class="footer-column__item footer-column__item_logos">
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-
-                <span class="logo-footer"><img src="images/logo-footer.png" /></span>
-            </div>
-
-        </div> <!-- /.footer -->
 
     </body>
 </html>

@@ -73,12 +73,14 @@ $(document).ready(function() {
 		$('.payment-type-card').addClass('active');
                 $('#kiwi-active').prop('checked',false);
                 $('#card-active').prop('checked',true);
+                $('.calc .payment-type-slider .ui-slider-handle ').toggleClass('ui-slider-handle_right');
 	    }
 	    else {
 		$('.payment-type-kiwi').addClass('active');
 		$('.payment-type-card').removeClass('active');
                 $('#card-active').prop('checked',false);
                 $('#kiwi-active').prop('checked',true);
+                 $('.calc .payment-type-slider .ui-slider-handle ').toggleClass('ui-slider-handle_right');
 	    }
 	}
     });

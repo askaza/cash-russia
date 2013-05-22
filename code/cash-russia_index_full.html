@@ -7,6 +7,7 @@
         <link type="image/png" rel="icon" href="favicon.png" />
 
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
 
@@ -137,7 +138,7 @@
 				    <small class="note">мы рассчитаем размер выплаты индивидуально</small>
 				</div>
 
-				<a href="#" class="submit-btn">Получить займ</a>
+				<span class="btn btn_big btn_orange submit-btn"><input class="btn_in" type="button"  value="Получить займ" /></span>
 				</div>
 				<div class="payment-type">
 				    <div class="payment-type-slider">
@@ -155,44 +156,48 @@
 		    </div>
 		</div> <!-- /.promo -->
 
+		
 		<div class="container home-content">
 		    <div class="condition">
-			<h3 class="condition__title"><i class="condition__title-star">*</i><a href="#">Обязательные условия получения займа</a></h3>
-			<div class="condition__text">
-			    Нужен: <a href="#">Сертификат WebMoney</a><br/>
-			    или аккаунт в соцсетях: <br/>
-			    <a href="#">«Вконтакте»</a><br/>
-			    или <a href="#">«Одноклассники»</a>
-			</div>
+			<h3 class="condition__title">Обязательные условия получения займа</h3>
+                        <div class="condition__text">
+                            <span>Нужно иметь:</span>
+                            <ul class="list_images">
+                                <li><img src="images/bg/wm.png" alt=""/><a href="#">Сертификат WebMoney</a></li>
+                            </ul>
+                            <span>Или аккаунт:</span>
+                            <ul class="list_images">
+                                <li><img src="images/bg/vk.png" alt=""/><a href="#">«Вконтакте»</a></li>
+                            </ul>
+                           <span> или: </span>
+                            <ul class="list_images">
+                                <li><img src="images/bg/ok.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                            </ul>			    
+                        </div>
 		    </div>
 		    <div class="promo-info">
-			<h3 class="promo-slogan">Сейчас выдано займов на 16 000 000 руб.</h3>
+			
 			<div class="confidence">
-			    <h3 class="confidence__title"><a href="#">Конфиденциальность
-				    информации</a></h3>
-			    <div class="confidence__text">
-				За все время работы, опираясь на принципы честного и ответственного
-				ведения бизнеса, компания зарекомендовала себя как надежный партнер
-				в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
-				сфере микрофинансирования.
-			    </div>
+                            <ul class="promo-list">
+                                <li>
+                                    За январь выдано займов на <strong>10 млн р.</strong>
+                                </li>
+                                <li>
+                                    <strong>97%</strong> клиентов считают наш сервис простым и удобным
+                                </li>
+                                <li>
+                                    более <strong>5 000</strong> человек уже стали нашими клиентами                                    
+                                </li>
+                            </ul>
 			</div>
 			<div class="action">
-			    <span class="action__terms">приведи друга&mdash;</span>
-			    <span class="action__price">получи %</span>
-			    <span class="action__description">
-				Каждый приведший в сервис
-				своего друга получает Бонус
-				на счет в личном кабинете
-			    </span>
+			    &nbsp;
 			</div>
 		    </div>
 
 		</div>
 	    </div>  <!-- /.main -->
-	</div>
-
-	<div class="footer"> <!-- .footer -->
+            <div class="footer"> <!-- .footer -->
 
 		<div class="footer-columns container">
 		    <div class="footer-column__item footer-column__item_logos">
@@ -222,6 +227,9 @@
 		</div>
 
 	</div> <!-- /.footer -->
+	</div>
+
+	
 
     </body>
 </html>

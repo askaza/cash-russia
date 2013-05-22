@@ -7,6 +7,7 @@
         <link type="image/png" rel="icon" href="favicon.png" />
 
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
 
@@ -43,8 +44,8 @@
                 $('.form .select').click(function() {
                     $(this).next('.dropdown').jScrollPane();
                 });
-                
-               
+
+
 
 
 
@@ -52,25 +53,25 @@
                 var Regions = [
                     "Москвоская область",
                     "Краснодарский край",
-                    "Адыгейская республика", 
+                    "Адыгейская республика",
                     "Москвоская область",
                     "Краdsfgfdснодарский край",
-                    "Адыгейская реsdfgfdспублика", 
+                    "Адыгейская реsdfgfdспублика",
                     "Москвоская область",
                     "Краснодарскиsdfgfdgй край",
-                    "Адыгейская республика", 
+                    "Адыгейская республика",
                     "Москвоскаяsdfgfdобласть",
                     "Краснодарский край",
-                    "Адыгейская республика", 
+                    "Адыгейская республика",
                     "Москвоская область",
                     "Краснодарский край",
-                    "Адыгейская республика", 
+                    "Адыгейская республика",
                     "Москвоская область",
                     "Краdsfgfdснодарский край",
-                    "Адыгейская реsdfgfdспублика", 
+                    "Адыгейская реsdfgfdспублика",
                     "Москвоская область",
                     "Краснодарскиsdfgfdgй край",
-                    "Адыгейская республика", 
+                    "Адыгейская республика",
                     "Москвоскаяsdfgfdобласть",
                     "Краснодарский край",
                     "Адыгейская республика"
@@ -78,20 +79,20 @@
                 var City = [
                     "Москва",
                     "Краснодар",
-                    "Волгоград"                   
-               
+                    "Волгоград"
+
                 ];
 
                 $(".field_autocomplete_region").autocomplete({
-                    source: Regions, 
-                    open: function( event, ui ) {
-                         $('.ui-autocomplete').jScrollPane();
+                    source: Regions,
+                    open: function(event, ui) {
+                        $('.ui-autocomplete').jScrollPane();
                     }
                 });
-                 $(".field_autocomplete_city").autocomplete({
-                    source: City, 
-                    open: function( event, ui ) {
-                         $('.ui-autocomplete').jScrollPane();
+                $(".field_autocomplete_city").autocomplete({
+                    source: City,
+                    open: function(event, ui) {
+                        $('.ui-autocomplete').jScrollPane();
                     }
                 });
 
@@ -170,12 +171,20 @@
                                 </div>
                             </div>
                             <div class="condition">
-                                <h3 class="condition__title"><i class="condition__title-star">*</i><a href="#">Обязательные условия получения займа</a></h3>
+                                <h3 class="condition__title">Обязательные условия получения займа</h3>
                                 <div class="condition__text">
-                                    Нужен: <a href="#">Сертификат WebMoney</a><br/>
-                                    или аккаунт в соцсетях: <br/>
-                                    <a href="#">«Вконтакте»</a><br/>
-                                    или <a href="#">«Одноклассники»</a>
+                                    <span>Нужно иметь:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/wm.png" alt=""/><a href="#">Сертификат WebMoney</a></li>
+                                    </ul>
+                                    <span>Или аккаунт:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/vk.png" alt=""/><a href="#">«Вконтакте»</a></li>
+                                    </ul>
+                                    <span> или: </span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/ok.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                                    </ul>			    
                                 </div>
                             </div>
                         </div> <!-- /.column-left  -->
@@ -243,11 +252,11 @@
                                         </li>
                                         <li class="fields-list__item">
                                             <label>Адрес регистрации: <i class="required">*</i></label>
-                                            
+
                                             <ul class="fields-list">                                                
                                                 <li class="fields-list__item">                                                  
-                                                     
-                                                   <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
+
+                                                    <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
                                                 </li>
                                                 <li class="fields-list__item">	                                                    
                                                     <input class="field field_text field_autocomplete field_autocomplete_city"  type="text" placeholder="Город"/>
@@ -256,12 +265,12 @@
                                                     <input class="field field_text field_autocomplete field_autocomplete_street"  type="text" placeholder="Улица"/>
                                                 </li>
                                                 <li class="fields-list__item">			
-                                                   
+
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Дом"/>
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>                                                    
                                                 </li>
                                                 <li class="fields-list__item">		
-                                                   
+
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
                                                     <input class="field field_text_short"  type="text" placeholder="Индекс"/>
                                                 </li>
@@ -274,15 +283,15 @@
                                             <label>Фактический адрес совпадает <br />с адресом регистрации</label>
                                             <div class="radio-box"><input class="field_chbox"  type="checkbox"/></div>
                                         </li>
-                                        
-                                          <li class="fields-list__item">
-                                            
-                                            
+
+                                        <li class="fields-list__item">
+
+
                                             <ul class="fields-list">
-                                                
+
                                                 <li class="fields-list__item">                                                    
-                                                     <label>Адрес регистрации: <i class="required">*</i></label>
-                                                   <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
+                                                    <label>Адрес регистрации: <i class="required">*</i></label>
+                                                    <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
                                                 </li>
                                                 <li class="fields-list__item">	
                                                     <label><i class="required">*</i></label>
@@ -302,22 +311,22 @@
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
                                                     <input class="field field_text_short"  type="text" placeholder="Индекс"/>
                                                 </li>
-                                                
+
 
                                             </ul>
                                         </li>
-                                        
+
                                         <li class="fields-list__item">
                                             <label>Мобильный телефон: <i class="required">*</i></label>
                                             <input class="field field_text"  type="text"/>
                                         </li>
-                                        
+
                                         <li class="fields-list__item">
                                             <label>Домашний телефона: </label>
                                             <input class="field field_text" type="text"/>
                                         </li>
                                     </ul>
-                                    
+
                                     <div class="btnset">
                                         <input type="button" value="Назад" class="btn-prev"/>
                                         <input type="button" value="Назад" class="btn-next"/>
@@ -329,38 +338,39 @@
 
                 </div>
             </div>  <!-- /.main -->
+            <div class="footer"> <!-- .footer -->
+
+                <div class="footer-columns container">
+                    <div class="footer-column__item footer-column__item_logos">
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+
+                    <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+                </div>
+
+            </div> <!-- /.footer -->
         </div>
 
-        <div class="footer"> <!-- .footer -->
 
-            <div class="footer-columns container">
-                <div class="footer-column__item footer-column__item_logos">
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-
-                <span class="logo-footer"><img src="images/logo-footer.png" /></span>
-            </div>
-
-        </div> <!-- /.footer -->
 
     </body>
 </html>

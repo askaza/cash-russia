@@ -7,6 +7,7 @@
         <link type="image/png" rel="icon" href="favicon.png" />
 
         <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
 
@@ -166,12 +167,20 @@
                                 </div>
                             </div>
                             <div class="condition">
-                                <h3 class="condition__title"><i class="condition__title-star">*</i><a href="#">Обязательные условия получения займа</a></h3>
+                                <h3 class="condition__title">Обязательные условия получения займа</h3>
                                 <div class="condition__text">
-                                    Нужен: <a href="#">Сертификат WebMoney</a><br/>
-                                    или аккаунт в соцсетях: <br/>
-                                    <a href="#">«Вконтакте»</a><br/>
-                                    или <a href="#">«Одноклассники»</a>
+                                    <span>Нужно иметь:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/wm.png" alt=""/><a href="#">Сертификат WebMoney</a></li>
+                                    </ul>
+                                    <span>Или аккаунт:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/vk.png" alt=""/><a href="#">«Вконтакте»</a></li>
+                                    </ul>
+                                    <span> или: </span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/ok.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                                    </ul>			    
                                 </div>
                             </div>
 
@@ -221,6 +230,13 @@
 				    <h4>Внутренний заголовок</h4>
 				    <h5>Внутренний заголовок</h5>
 				    <h6>Внутренний заголовок</h6>
+                                    
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/vk.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                                        <li><img src="images/bg/ok.png" alt=""/>Так будет выглядеть не ссылка, а просто какой-то текст</li>
+                                        <li><img src="images/bg/vk.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                                        <li><img src="images/bg/ok.png" alt=""/>Так будет выглядеть не ссылка, а просто какой-то текст</li>
+                                    </ul>
 
 				    <div class="text-columns">
 					<p class="large-text">За все время работы, опираясь на принципы честного и ответственного ведения
@@ -241,6 +257,22 @@
 					 зарекомендовала себя как надежный партнер в отношениях с каждым из клиентов,
 					 что сделало ее одним из лидеров в сфере микрофинансирования.
 				     </blockquote>
+                                      <div class="message-box message-box_error">
+                                         <h3 class="message-box__head">
+                                             Неправильно
+                                             <i class="ico ico_hide"></i>
+                                         </h3>
+                                         <div class="message-box__content">
+                                             За все время работы, опираясь на принципы честного и ответственного
+                                             ведения бизнеса, компания зарекомендовала себя как надежный партнер
+                                             в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
+                                             сфере микрофинансирования.  Получить мини займы можно на прозрачных и 
+                                             простых условиях, которые включают в себя понятную схему погашения,
+                                             отсутствие поручителей и залога, а также скрытых платежей и комиссий.
+                                             Кроме того, несомненным преимуществом является более низкая комиссия,
+                                             чем у аналогичных финансовых фирм.
+                                         </div>
+                                     </div>
 
 				     <div class="text-columns">
 					 <p>
@@ -256,15 +288,90 @@
 					 </p>
 
 					 <div class="action action_right">
-					     <span class="action__terms">приведи друга&mdash;</span>
-					     <span class="action__price">получи %</span>
-					     <span class="action__description">
-						 Каждый приведший в сервис
-						 своего друга получает Бонус
-						 на счет в личном кабинете
-					     </span>
+					     &nbsp;
 					 </div>
 				     </div>
+                                     
+                                     <h2>Пример таблицы в тексте и жирные заголовки в таблице</h2>
+                                     
+                                         <table class="loan-table">         
+                                    <col width="26" />
+                                    <col width="77" />
+                                    <col width="60" />
+                                    <col width="87" />
+                                    <col width="65" />                                 
+                                    <thead>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th>Получено</th>
+                                            <th>Сумма</th>
+                                            <th>Погашение</th>
+                                            <th>Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 сентября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>   
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 сентября</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 фпреля</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                     <br /><br />
+                                     <div class="message-box message-box_success">
+                                         <h3 class="message-box__head">
+                                             Правильно
+                                             <i class="ico ico_hide"></i>
+                                         </h3>
+                                         <div class="message-box__content">
+                                             За все время работы, опираясь на принципы честного и ответственного
+                                             ведения бизнеса, компания зарекомендовала себя как надежный партнер
+                                             в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
+                                             сфере микрофинансирования.  Получить мини займы можно на прозрачных и 
+                                             простых условиях, которые включают в себя понятную схему погашения,
+                                             отсутствие поручителей и залога, а также скрытых платежей и комиссий.
+                                             Кроме того, несомненным преимуществом является более низкая комиссия,
+                                             чем у аналогичных финансовых фирм.
+                                         </div>
+                                     </div>
+                                     
 				     <div class="text-columns">
 					<p>За все время работы, опираясь на принципы честного и ответственного ведения
 					    бизнеса, компания зарекомендовала себя как надежный партнер в отношениях
@@ -301,38 +408,39 @@
 
                 </div>
             </div>  <!-- /.main -->
+            <div class="footer"> <!-- .footer -->
+
+		<div class="footer-columns container">
+		    <div class="footer-column__item footer-column__item_logos">
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+		    </div>
+		     <div class="footer-column__item">
+			 За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		     </div>
+		      <div class="footer-column__item">
+			  За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		      </div>
+
+		      <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+		</div>
+
+	</div> <!-- /.footer -->
         </div>
 
-        <div class="footer"> <!-- .footer -->
-
-            <div class="footer-columns container">
-                <div class="footer-column__item footer-column__item_logos">
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos1.png" />
-                    <img src="images/bg/card-logos2.png" />
-                    <img src="images/bg/card-logos3.png" />
-                    <img src="images/bg/card-logos3.png" />
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-                <div class="footer-column__item">
-                    За все время работы, опираясь на принципы честного и
-                    ответственного ведения бизнеса, компания зарекомендовала
-                    себя как надежный партнер в отношениях с каждым из клиентов,
-                    что сделало ее одним из лидеров в сфере
-                </div>
-
-                <span class="logo-footer"><img src="images/logo-footer.png" /></span>
-            </div>
-
-        </div> <!-- /.footer -->
+       
 
     </body>
 </html>
