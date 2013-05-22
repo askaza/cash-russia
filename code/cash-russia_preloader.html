@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CashRussia</title>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" rel="icon" href="favicon.ico" />
+        <link type="image/png" rel="icon" href="favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
+
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+        <!--[if lte IE 8 ]>
+                <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <![endif]-->
+        <script>
+        $(function() {
+
+            $( "#dialog-message" ).dialog({
+            modal: true,
+            dialogClass: 'blue-dialog',
+            width:'510px',
+            draggable: false,
+            resizable: false,
+            buttons: [ { text: "Повторить отправку кода", click: function() { $( this ).dialog( "close" ); } } ]
+            });
+        });
+        </script>
+    </head>
+    <body>
+	<ul class="social-buttons">
+	    <li class="social-buttons__item"><a class="ico ico_fb" href="#"></a></li>
+	    <li class="social-buttons__item"><a class="ico ico_vk" href="#"></a></li>
+	    <li class="social-buttons__item"><a class="ico ico_tw" href="#"></a></li>
+	     <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
+	</ul>
+
+	<div class="wrapper">
+	    <div class="header"> <!-- header -->
+		<div class="container">
+		    <h1 class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></h1>
+		    <span class="slogan">Всероссийская система онлайн-займов</span>
+
+		    <ul class="menu menu_main">
+			<li class="menu__item">
+			    <a href="#">О проекте</a>
+			    <ul class="menu submenu">
+				<li class="menu__item"><a href="#">Сертификаты</a></li>
+				<li class="menu__item"><a href="#">Контакты</a></li>
+			    </ul>
+			</li>
+			<li class="menu__item"><a href="#">Как получить?</a></li>
+			<li class="menu__item"><a href="#">Как погасить?</a></li>
+			<li class="menu__item"><a href="#">Новости</a></li>
+		    </ul>
+
+		    <div class="header-links">
+			<span class="header-links__call">
+			    <a class="order-call" href="#">Заказать звонок</a>
+			    <i class="header-links__note">Перезвоним в удобное Вам время</i>
+			</span>
+			<span class="header-links__personal">
+			    <a class="order-call" href="#">Личный кабинет</a>
+			    <a href="#" class="header-links__note">Добавить в избранное</a>
+			</span>
+		    </div>
+		</div>
+	    </div> <!-- /.header -->
+
+	    <div class="main"> <!-- .main -->
+
+                <div class="ui-widget-overlay ui-front"></div>
+		<div class="preloader">
+		    <img class="preloader__image" src="images/preloader.gif" width="99" height="99" />
+		    <span class="preloader__text">Подождите немного</span>
+		</div>
+	    </div>  <!-- /.main -->
+
+            <div class="footer"> <!-- .footer -->
+
+		<div class="footer-columns container">
+		    <div class="footer-column__item footer-column__item_logos">
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+		    </div>
+		     <div class="footer-column__item">
+			 За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		     </div>
+		      <div class="footer-column__item">
+			  За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		      </div>
+
+		      <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+		</div>
+
+	</div> <!-- /.footer -->
+	</div>
+
+
+
+    </body>
+</html>
+

@@ -33,22 +33,8 @@
 
                 });
 
-                $(".field_data").on("focus", function() {
-                    $(".ui-datepicker select").styler();
-                    $('.select').click(function() {
-                        $(this).next('.dropdown').jScrollPane();
-                    });
-                });
 
-                $('.form select, .form input[type="radio"], .form input[type="checkbox"]').styler();
-                $('.form .select').click(function() {
-                    $(this).next('.dropdown').jScrollPane();
-                });
-
-
-
-
-
+                $('.form input[type="radio"], .form input[type="checkbox"]').styler();
 
                 var Regions = [
                     "Москвоская область",
@@ -184,7 +170,7 @@
                                     <span> или: </span>
                                     <ul class="list_images">
                                         <li><img src="images/bg/ok.png" alt=""/><a href="#">«Одноклассники»</a></li>
-                                    </ul>			    
+                                    </ul>
                                 </div>
                             </div>
                         </div> <!-- /.column-left  -->
@@ -202,6 +188,7 @@
                             </div>
                             <div class="column-content">
                                 <form class="form form_register">
+				    <h3 class="form-group-title">Паспортные данные:</h3>
                                     <ul class="fields-list">
                                         <li class="fields-list__item">
                                             <label>Фамилия: <i class="required">*</i></label>
@@ -214,7 +201,7 @@
                                                 <label>Ошибка</label>
                                                 <div class="error-text">Заполните поле</div>
                                             </div>
-                                        </li>                                        
+                                        </li>
                                         <li class="fields-list__item">
                                             <label>Отчество: </label>
                                             <input class="field field_text" name="fSecondName" type="text"/>
@@ -242,34 +229,39 @@
                                         </li>
                                         <li class="fields-list__item">
                                             <label>Какой-то селект: </label>
-                                            <select>
-                                                <option>asdfdsfdsfdsfds</option>
-                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
-                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
-                                                <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
-                                                <option>afdg sdfgfdg</option>
-                                            </select>
+					    <div class="field_select_wrapper">
+						<select class="field field_select">
+						    <option>asdfdsfdsfdsfds</option>
+						    <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+						    <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+						    <option>asdfdsfdsfdsfds dfgdfg gfd gfdg sdfgfdg</option>
+						    <option>afdg sdfgfdg</option>
+						</select>
+					    </div>
                                         </li>
+					</ul>
+					<h3 class="form-group-title">Адресные данные:</h3>
+					<ul class="fields-list">
                                         <li class="fields-list__item">
                                             <label>Адрес регистрации: <i class="required">*</i></label>
 
-                                            <ul class="fields-list">                                                
-                                                <li class="fields-list__item">                                                  
+                                            <ul class="fields-list">
+                                                <li class="fields-list__item">
 
                                                     <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
                                                 </li>
-                                                <li class="fields-list__item">	                                                    
+                                                <li class="fields-list__item">
                                                     <input class="field field_text field_autocomplete field_autocomplete_city"  type="text" placeholder="Город"/>
                                                 </li>
-                                                <li class="fields-list__item">	                                                   
+                                                <li class="fields-list__item">
                                                     <input class="field field_text field_autocomplete field_autocomplete_street"  type="text" placeholder="Улица"/>
                                                 </li>
-                                                <li class="fields-list__item">			
+                                                <li class="fields-list__item">
 
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Дом"/>
-                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>                                                    
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>
                                                 </li>
-                                                <li class="fields-list__item">		
+                                                <li class="fields-list__item">
 
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
                                                     <input class="field field_text_short"  type="text" placeholder="Индекс"/>
@@ -289,24 +281,24 @@
 
                                             <ul class="fields-list">
 
-                                                <li class="fields-list__item">                                                    
+                                                <li class="fields-list__item">
                                                     <label>Адрес регистрации: <i class="required">*</i></label>
                                                     <input class="field field_text field_autocomplete field_autocomplete_region"  type="text" placeholder="Регион"/>
                                                 </li>
-                                                <li class="fields-list__item">	
+                                                <li class="fields-list__item">
                                                     <label><i class="required">*</i></label>
                                                     <input class="field field_text field_autocomplete field_autocomplete_city"  type="text" placeholder="Город"/>
                                                 </li>
-                                                <li class="fields-list__item">	
+                                                <li class="fields-list__item">
                                                     <label><i class="required">*</i></label>
                                                     <input class="field field_text field_autocomplete field_autocomplete_street"  type="text" placeholder="Улица"/>
                                                 </li>
-                                                <li class="fields-list__item">			
+                                                <li class="fields-list__item">
                                                     <label><i class="required">*</i></label>
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Дом"/>
-                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>                                                    
+                                                    <input class="field field_text field_text_short"  type="text" placeholder="Корпус"/>
                                                 </li>
-                                                <li class="fields-list__item">		
+                                                <li class="fields-list__item">
                                                     <label><i class="required">*</i></label>
                                                     <input class="field field_text field_text_short"  type="text" placeholder="Квартира"/>
                                                     <input class="field field_text_short"  type="text" placeholder="Индекс"/>
