@@ -24,8 +24,14 @@
         <!--[if lte IE 8 ]>
                 <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
         <![endif]-->
+        
+        <script>
 
-
+            $(function() {              
+                $(' input[type="radio"], input[type="checkbox"]').styler();
+            });
+                
+        </script>
     </head>
     <body>
         <ul class="social-buttons">
@@ -211,6 +217,23 @@
                                 <span class="btn btn_big btn_orange"><input class="btn_in" type="button"  value="Самая маленькая кнопка" /></span>
                                 <br />
                                  <br />
+                                 
+                                 <div class="radiobtn-group radiobtn-group_inline">
+                                     <label id="one">
+                                         <input type="radio" class="field_radio"  name="r"/>
+                                         Это какой-то чекбокс или радиобаттон
+                                     </label>
+                                     <label id="one">
+                                         <input type="radio" class="field_radio"  name="r"/>
+                                         Это какой-то чекбокс или радиобаттон
+                                     </label>
+                                 </div>
+                                 <div class="radiobtn-group">
+                                     <label id="two">
+                                         <input type="checkbox" class="field_chbox"  name=""/>
+                                         Это какой-то чекбокс или радиобаттон
+                                     </label>
+                                 </div>
                             
                             </div>
                         </div> <!--/.column-right  -->

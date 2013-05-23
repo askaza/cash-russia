@@ -2039,7 +2039,8 @@ blockquote {
     width: 230px;
     cursor: pointer;
 }
-.radiobtn-group .jq-radio {
+.radiobtn-group .jq-radio, 
+.radiobtn-group .jq-checkbox {
     position: absolute;
     left:0;
     top:0;
