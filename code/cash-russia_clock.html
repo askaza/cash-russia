@@ -20,8 +20,8 @@
         <script src="js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/prefixfree.min.js"></script>
-	<script src="js/flipclock.min.js"></script>
+	<script type="text/javascript" src="js/prefixfree.min.js"></script>
+	<script type="text/javascript" src="js/flipclock.min.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
 
         <!--[if lte IE 8 ]>
@@ -31,9 +31,10 @@
 
 	<script type="text/javascript">
 	    $(function() {
-		var clock = $('#clock').FlipClock({
-
-			 });
+                $('.text-columns').columnize({ columns:2 });
+		var clock = $('#clock').FlipClock();                         
+                 clock.setTime(800);             
+                 clock.setCountdown(true); 
 		});
 
 	</script>
@@ -200,7 +201,7 @@
 				    <h2>Вы получите деньги через:</h2>
 
 
-				<div id="clock"></div>
+				<div class="clock-wrapper"><div id="clock"></div></div>
 
 				
 				<h2>Не переживайте, в случае отключения интернета

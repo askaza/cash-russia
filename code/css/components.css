@@ -2260,7 +2260,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 /* preloader-box < */
 
 .preloader {
-    background: #ececec;
+    background: #fff;
     border-radius: 50px;
     height: 145px;
     width: 110px;
@@ -2300,4 +2300,9 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     color:#005daa;
     font-weight: bold;
     font-size: 20px;
+}
+
+.clock-wrapper {
+    overflow: hidden;
+    margin-left: 30px;
 }
