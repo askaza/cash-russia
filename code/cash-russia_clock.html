@@ -20,24 +20,27 @@
         <script src="js/jquery.mousewheel.js"></script>
 	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>
-	<script type="text/javascript" src="js/flipclock.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
         <script type="text/javascript" src="js/common.js"></script>
+
+	<script type="text/javascript">
+	    $(function(){
+		$('.text-columns').columnize({ columns:2 });
+		$('#counter').countdown({
+		    image: 'images/bg/digits.png',
+		    startTime: '15:00',
+		    digitWidth: 109,
+		    digitHeight: 160,
+		    format: "mm:ss",
+		    digitImages: 6
+		});
+	    });
+	</script>
 
         <!--[if lte IE 8 ]>
                 <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
         <![endif]-->
 
-
-	<script type="text/javascript">
-	    $(function() {
-                $('.text-columns').columnize({ columns:2 });
-		var clock = $('#clock').FlipClock();                         
-                 clock.setTime(800);             
-                 clock.setCountdown(true); 
-		});
-
-	</script>
 
     </head>
     <body>
@@ -201,9 +204,9 @@
 				    <h2>Вы получите деньги через:</h2>
 
 
-				<div class="clock-wrapper"><div id="clock"></div></div>
+				 <div id="counter"></div>
 
-				
+
 				<h2>Не переживайте, в случае отключения интернета
 				    ответ придет в сообщении SMS </h2>
 

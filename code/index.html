@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
@@ -10,15 +10,11 @@
     <script type="text/javascript">
       $(function(){
         $('#counter').countdown({
-          image: 'images/digits.png',
-          startTime: '01:12:12:00'
-        });
-
-        $('#counter_2').countdown({
-          image: 'images/digits.png',
-          startTime: '00:10',
-          timerEnd: function(){ alert('end!'); },
-          format: 'mm:ss'
+          image: 'images/bg/digits.png',
+          startTime: '15:00',
+	  digitWidth: 109,
+	  digitHeight: 160,
+	  format: "mm:ss"
         });
       });
     </script>
