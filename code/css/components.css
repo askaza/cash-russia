@@ -2302,8 +2302,11 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     font-size: 20px;
 }
 
-#counter {
+.page-illustrate {
     margin: 20px 0 30px;
+    position: relative;
+}
+#counter {   
     margin-left: 30px;
 }
 .cntSeparator {
