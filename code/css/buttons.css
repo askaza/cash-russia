@@ -30,10 +30,13 @@
 }
 .btn_small.btn_blue:hover {
     background-position: 0 -27px;
+    box-shadow: -1px 1px 1px #c7c7c7;
 }
 .btn_small.btn_blue:active {
     background-position: 0 -54px;
     color:#e2e5e8;
+    box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .btn_small.btn_orange {
@@ -41,9 +44,12 @@
 }
 .btn_small.btn_orange:hover {
     background-position: 0 -108px;
+    box-shadow: -1px 1px 1px #c7c7c7;
 }
 .btn_small.btn_orange:active {
     background-position: 0 -135px;
+    box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .btn_add .btn_in {
@@ -57,19 +63,23 @@
     font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
     line-height: 38px;
     border-radius: 10px;
+    
 }
 .btn_middle .btn_in {
-     padding: 0 20px;
+    padding: 0 20px;
 }
 .btn_middle.btn_blue {
     background-position: 0 -162px;
 }
 .btn_middle.btn_blue:hover {
     background-position: 0 -201px;
+    box-shadow: -1px 1px 1px #c7c7c7;
 }
 .btn_middle.btn_blue:active {
     background-position: 0 -240px;
     color:#e2e5e8;
+    box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .btn_middle.btn_orange {
@@ -77,9 +87,12 @@
 }
 .btn_middle.btn_orange:hover {
     background-position: 0 -318px;
+    box-shadow: -1px 1px 1px #c7c7c7;
 }
 .btn_middle.btn_orange:active {
     background-position: 0 -357px;
+    box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .btn_next .btn_in {
@@ -95,9 +108,9 @@
     font-size: 25px;
     font-family:  'Tahoma' ,'Conv_tahoma',  'Arial', 'Helvetica', 'Geneva', sans-serif;
      height: 54px;
-    line-height: 53px;
-    
+    line-height: 53px;    
     border-radius: 10px;
+    box-shadow: -1px 1px 1px #c7c7c7;
 }
 .btn_big .btn_in {
      padding: 0 50px;
@@ -112,6 +125,8 @@
 .btn_big.btn_blue:active {
     background-position: 0 -666px;
     color:#e2e5e8;
+   box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .btn_big.btn_orange {
@@ -122,6 +137,8 @@
 }
 .btn_big.btn_orange:active {
     background-position: 0 -504px;
+    box-shadow: 2px -2px 2px #c7c7c7;
+    margin: 2px 0 0 2px;
 }
 
 .submit-btn {    
