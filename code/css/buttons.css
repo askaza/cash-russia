@@ -153,3 +153,31 @@
     width: 292px;
     color: #fff;
 }
+
+
+/* active < */
+
+.btn_active {
+    background: url(../images/bg/buttons-active.png) repeat-x 0 0;
+}
+
+.btn_small.btn_blue.btn_active {
+    background-position: 0 -28px;
+}
+.btn_small.btn_orange.btn_active {
+    background-position: 0 0;
+}
+.btn_middle.btn_blue.btn_active {
+    background-position: 0 -55px;
+}
+.btn_middle.btn_orange.btn_active {
+    background-position: 0 -94px;
+}
+.btn_big.btn_blue.btn_active {
+    background-position: 0 -187px;
+    text-shadow: 1px -2px 1px #6c6c6c;
+}
+.btn_big.btn_orange.btn_active {
+    background-position: 0 -133px;
+    text-shadow: 1px -2px 1px #6c6c6c;
+}
