@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CashRussia</title>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" rel="icon" href="favicon.ico" />
+        <link type="image/png" rel="icon" href="favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
+
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.columnizer.js"></script>
+        <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+
+        <!--[if lte IE 8 ]>
+                <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <ul class="social-buttons">
+            <li class="social-buttons__item"><a class="ico ico_fb" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_vk" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_tw" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
+        </ul>
+
+        <div class="wrapper wrapper_personal">
+            <div class="header"> <!-- header -->
+                <div class="container">
+                    <a href="/" class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></a>
+                    <span class="slogan">Всероссийская система онлайн-займов</span>
+
+                    <ul class="menu menu_main">
+                        <li class="menu__item">
+                            <a href="#">О проекте</a>
+                            <ul class="menu submenu">
+                                <li class="menu__item"><a href="#">Сертификаты</a></li>
+                                <li class="menu__item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#">Как получить?</a></li>
+                        <li class="menu__item"><a href="#">Как погасить?</a></li>
+                        <li class="menu__item"><a href="#">Новости</a></li>
+                    </ul>
+
+                    <div class="header-links">
+                        <span class="header-links__call">
+                            <a class="order-call" href="#">Заказать звонок</a>
+                            <i class="header-links__note">Перезвоним в удобное Вам время</i>
+                        </span>
+                        <span class="header-links__personal">
+                            <a class="order-call" href="#">Личный кабинет</a>
+                            <a href="#" class="header-links__note">Добавить в избранное</a>
+                        </span>
+                        <div class="order-call-dropdown">
+                            <form class="order-call-form" method="post" action="#">
+                                <p class="form-note">
+                                    С вами свяжется менеджер в удобное для вас время
+                                </p>
+                                <ul class="fields-list">
+                                    <li class="fields-list__item">
+                                        <label>Представьтесь</label>
+                                        <input type="text" class="field field_text" name="fName" />
+                                    </li>
+                                    <li class="fields-list__item">
+                                        <label>Оставье номер телефона</label>
+                                        <span class="phone-number-text">+7</span>
+                                        <input type="text" class="field field_text_code" />
+                                        <span class="phone-number-text">-</span>
+                                        <input type="text" class="field field_text_number" />
+                                    </li>
+                                    <li class="fields-list__item">
+                                        <label>Укажите дату и время звонка</label>
+                                        <input type="text" class="field field_text_mounth" />
+                                        <input type="text" class="field field_text_num" />
+                                        <input type="text" class="field field_text_time" />
+                                    </li>
+                                </ul>
+                                <input class="btn-small" type="submit" />
+                            </form>
+                            <i class="corner"></i>
+                            <i class="close-popup">x</i>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.header -->
+
+            <div class="main main_columns"> <!-- .main -->
+
+                <div class="container">
+                    <div class="columns columns_profile"> <!-- .columns  -->
+                        <div class="column-left"> <!-- .column-left  -->
+                            <div class="welcome-box">
+                                <h1 class="welcome-box__title">Личный кабинет</h1>
+                                <div class="welcome-text">
+                                    <small>Здравствуйте,</small>
+                                    <h2 class="username">Андрианополис<br /> Павел Андреевич</h2>
+                                    <p>Мы можем перевести деньги на Ваш интернет–<br />
+                                        счет или на дебетовую карту сразу после<br /> <a href="#">заполнения заявки</a></p>
+                                </div>
+                                <div class="btnset">
+                                    <span class="btn btn_small btn_blue"><a href="#" class="btn_in">
+                                            Текущий займ
+                                        </a>
+                                    </span>
+                                    <span class="btn btn_small btn_blue"><a href="#" class="btn_in">
+                                            Настройки
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="loan-box">
+                                <h3 class="loan-box__title">Текущий займ:</h3>
+
+                                <table class="loan-table loan-table_active">
+                                    <col width="26" />
+                                    <col width="80" />
+                                    <col width="60" />
+                                    <col width="80" />
+                                    <col width="65" />
+                                    <thead>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th>Получено</th>
+                                            <th>Сумма</th>
+                                            <th>Погашение</th>
+                                            <th>Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ico-time"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td colspan="3"><span class="btn btn_small btn_orange btn_add"><a href="#" class="btn_in">
+                                                    Продлить займ
+                                                </span>
+                                                </a></td>
+                                            <td>
+                                                <span class="remain">
+                                                    <small class="remain__label">Осталось</small><br/>
+                                                    10 дней
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="remain">
+                                                    <small class="remain__label">Осталось</small><br/>
+                                                    10 000 р.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <h3 class="loan-box__subtitle">История займов:</h3>
+                                <table class="loan-table">
+                                    <col width="26" />
+                                    <col width="77" />
+                                    <col width="60" />
+                                    <col width="87" />
+                                    <col width="65" />
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 сентября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 сентября</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 фпреля</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="ico-check"></i></td>
+                                            <td>22 ноября</td>
+                                            <td>15 000 р.</td>
+                                            <td><strong class="end-date">12 декабря</strong></td>
+                                            <td><strong class="end-summ">17500</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                            <a href="#" class="change-profile-link">Для изменения личных данных свяжитесь со службой поддержки</a>
+                        </div> <!-- /.column-left  -->
+
+                        <div class="column-right"> <!-- .column-right  -->
+
+                            <div class="calc calc_active-user calc_prolong"> <!-- .calc -->
+                                <i class="calc_corner_l"></i>
+                                <i class="calc_corner_r"></i>
+                                <div class="calc__inner">
+                                    <h2 class="calc__title">Продление займа</h2>
+
+                                    <div class="range range_days range_days_prolong">
+                                        <div class="range-input">
+                                            <label for="money">На срок:</label>
+                                            <input type="text" name="days" id="days" value="22" />
+                                            <span>дня</span>
+                                        </div>
+                                        <div class="range-buttons">
+                                            <a class="range-buttons_up"></a>
+                                            <a class="range-buttons_down"></a>
+                                        </div>
+                                        <div class="range-slider-wrapper">
+                                            <div class="range-slider-scale">
+                                                <span class="left">2</span>
+                                                <span class="center">15</span>
+                                                <span class="right">30</span>
+                                            </div>
+                                            <div id="range-days-sl" class="range-slider">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix loan-info">
+                                        <div class="range range_money">
+                                            <div class="range-input">
+                                                <label>Отдаем:</label>
+                                                <input type="text" name="loan-money" value="17500" />
+                                            </div>
+                                        </div>
+                                        <div class="range range_days">
+                                            <div class="range-input">
+                                                <label>Когда:</label>
+                                                <input type="text" name="loan-days" value="22.12.2014" />
+                                            </div>
+                                        </div>
+                                        <div class="range range_persent">
+                                            <div class="range-input">
+                                                <label>Ставка:</label>
+                                                <div class="persent">
+                                                    <span class="persent__value">для Вас 2%</span>
+                                                    <small class="note">Следующий займ будет со ставкой 1,5%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix">
+					<div class="range range_money range_overpayment">
+                                            <div class="range-input">
+                                                <label>Переплата:</label>
+                                                <input type="text" value="17500" name="loan-money">
+                                            </div>
+                                        </div>
+
+
+                                       <span class="btn btn_big btn_orange submit-btn"><input class="btn_in" type="button"  value="Получить займ" /></span>
+                                    </div>
+                                </div>
+                            </div> <!-- /.calc -->
+
+
+                            <div class="promo-info">
+                                <div class="confidence">
+                                    <h3 class="confidence__title"><a href="#">Конфиденциальность
+                                            информации</a></h3>
+                                    <div class="confidence__text">
+                                        За все время работы, опираясь на принципы честного и ответственного
+                                        ведения бизнеса, компания зарекомендовала себя как надежный партнер
+                                        в отношениях с каждым из клиентов, что сделало ее одним из лидеров в
+                                        сфере микрофинансирования.
+                                    </div>
+                                </div>
+                                <div class="action">
+                                    &nbsp;
+                                </div>
+                            </div>
+
+                        </div> <!--/.column-right  -->
+                    </div> <!-- /.columns  -->
+
+                </div>
+            </div>  <!-- /.main -->
+            <div class="footer"> <!-- .footer -->
+
+                <div class="footer-columns container">
+                    <div class="footer-column__item footer-column__item_logos">
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos1.png" />
+                        <img src="images/bg/card-logos2.png" />
+                        <img src="images/bg/card-logos3.png" />
+                        <img src="images/bg/card-logos3.png" />
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+                    <div class="footer-column__item">
+                        За все время работы, опираясь на принципы честного и
+                        ответственного ведения бизнеса, компания зарекомендовала
+                        себя как надежный партнер в отношениях с каждым из клиентов,
+                        что сделало ее одним из лидеров в сфере
+                    </div>
+
+                    <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+                </div>
+
+            </div> <!-- /.footer -->
+        </div>
+
+
+
+    </body>
+</html>
+

@@ -2306,7 +2306,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     margin: 20px 0 30px;
     position: relative;
 }
-#counter {   
+#counter {
     margin-left: 30px;
 }
 .cntSeparator {
@@ -2316,3 +2316,83 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     height: 160px;
     text-indent: -99999px;
 }
+
+/* calc prolong < */
+
+.calc_prolong {
+    width: 562px;
+}
+.calc-prolong .calc__title {
+    margin-left: 114px;
+    margin-top: 6px;
+    padding-left: 38px;
+}
+
+.calc_prolong .calc_corner_l {
+    background: url("../images/bg/calc-prolong-left.png") no-repeat scroll 0 -2px transparent;
+    height: 396px;
+    top:-37px;
+    width: 32px;
+}
+
+.calc_prolong .calc_corner_r {
+    background: url("../images/bg/calc-prolong-right.png") no-repeat scroll 0 -2px transparent;
+    height: 396px;
+    top:-37px;
+    width: 32px;
+}
+
+.calc_prolong .calc__inner {
+    background: url("../images/bg/calc-prolong-content.png") repeat-x scroll 0 0 transparent;
+    height: 357px;
+    margin: 0 32px;
+    padding: 13px 5px 0 20px;
+    position: relative;
+}
+.calc_prolong .calc__title {
+    background: url("../images/bg/calc-prolong-ico.png") no-repeat scroll 0 2px transparent;
+}
+.calc_prolong .range_days .ui-slider-range {
+    background: url("../images/bg/days-prolong-rank-alive.png") repeat-x scroll 0 0 transparent;
+}
+
+.calc_prolong .range_overpayment {
+    float: left;
+    margin-top: -18px;
+}
+
+.calc_prolong .range-input label {
+    margin-bottom: 10px;
+}
+.calc_prolong .range-slider-wrapper {
+    margin-top: 10px;
+}
+.calc_prolong .range-buttons {
+    margin-top: 33px;
+}
+.calc_prolong .loan-info {
+    margin-top: 10px;
+}
+.calc_prolong .loan-info .range_days {
+    margin-left: 38px;
+}
+.calc_prolong .loan-info .range_days input {
+    color: #575756;
+    width: 132px;
+}
+.calc_prolong .range_persent {
+    margin-left: 20px;
+    width: 150px;
+}
+.calc_prolong .loan-info .persent {
+    margin-left: -5px;
+    margin-top: 4px;
+    width: 150px;
+}
+.calc_prolong  .loan-info .persent__value {
+    margin-bottom: 12px;
+}
+.calc_prolong .submit-btn {
+    margin-top: 10px;
+}
+/* calc prolong > */
