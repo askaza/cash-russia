@@ -2351,6 +2351,8 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 }
 .calc_prolong .calc__title {
     background: url("../images/bg/calc-prolong-ico.png") no-repeat scroll 0 2px transparent;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 .calc_prolong .range_days .ui-slider-range {
     background: url("../images/bg/days-prolong-rank-alive.png") repeat-x scroll 0 0 transparent;
@@ -2371,7 +2373,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     margin-top: 33px;
 }
 .calc_prolong .loan-info {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .calc_prolong .loan-info .range_days {
     margin-left: 38px;
@@ -2393,6 +2395,8 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     margin-bottom: 12px;
 }
 .calc_prolong .submit-btn {
-    margin-top: 10px;
+    float: none;
+    margin: 30px auto 0;
+    display: block;
 }
 /* calc prolong > */
