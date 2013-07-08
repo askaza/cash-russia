@@ -2400,3 +2400,96 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     display: block;
 }
 /* calc prolong > */
+
+/* how-to-steps < */
+
+.how-to-steps {
+    margin: -12px -30px 45px 37px;
+    padding: 0;
+    overflow: hidden;
+}
+.how-to-steps li {
+    background: url(../images/bg/long-arrow.png) no-repeat 100% 30px;
+    list-style: none outside;
+    float: left;
+    width: 170px;
+}
+.how-to-steps li:last-child {
+    background: none;
+} 
+.step-number {
+    color: #575756;
+    font-size: 14px;
+    margin-bottom: 27px;
+    display: block;
+}
+.step-title {
+    color: #0073bc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.how-to-steps .how-to-step1 {
+    background-position: 113px 111px;
+}
+.how-to-steps .how-to-step2 {
+    background-position: 126px 111px;
+    width: 175px;
+}
+.how-to-steps .how-to-step3 {
+    background: none;
+}
+
+.how-to-step1 .step-img {
+    margin-left: -52px;
+}
+.how-to-step2 .step-img {
+    margin-left: -18px;
+    margin-top: 2px;
+}
+.how-to-step3 .step-img {
+    margin-left: -9px;
+    margin-top: 2px;
+}
+.how-to-payments {
+    margin-left: 12px;
+    margin-top: 7px;
+}
+.how-to-payments li {
+    list-style: none;
+    display: block;
+    margin-bottom:53px; 
+}
+.how-to-payments-title {
+    color: #1d1d1b;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+.kiwi-information {
+    background: url(../images/bg/kiwi-log.png) no-repeat 8px 5px;
+    padding-left: 205px;
+    min-height: 145px;
+}
+.kiwi-information__text, 
+.kiwi-information__text a {
+    font-family: 'pf_beausans_probold';
+    color: #0073bc;
+    font-size: 29px;
+    line-height: 35px;
+}
+.kiwi-information__text {
+    margin-bottom: 7px;
+}
+.link-pseudo .hint-message-box {  
+    display: none;
+    margin-top:30px;
+    width: 271px;
+}
+.link-pseudo:hover .hint-message-box  {
+    display: block;
+}
+
+
+/* how-to-steps < */

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CashRussia</title>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" rel="icon" href="favicon.ico" />
+        <link type="image/png" rel="icon" href="favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/default.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/buttons.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/components.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.10.2.custom.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/flipclock.css" media="screen" />
+
+        <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+        <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.columnizer.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+
+
+
+        <!--[if lte IE 8 ]>
+                <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <ul class="social-buttons">
+            <li class="social-buttons__item"><a class="ico ico_fb" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_vk" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_tw" href="#"></a></li>
+            <li class="social-buttons__item"><a class="ico ico_ok" href="#"></a></li>
+        </ul>
+
+        <div class="wrapper">
+            <div class="header"> <!-- header -->
+                <div class="container">
+                    <a href="/" class="logo"><img class="logo__img" src="images/logo.png" alt="CashRussia" title="CashRussia" width="223" height="55" /></a>
+                    <span class="slogan">Всероссийская система онлайн-займов</span>
+
+                    <ul class="menu menu_main">
+                        <li class="menu__item">
+                            <a href="#">О проекте</a>
+                            <ul class="menu submenu">
+                                <li class="menu__item"><a href="#">Сертификаты</a></li>
+                                <li class="menu__item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#">Как получить?</a></li>
+                        <li class="menu__item"><a href="#">Как погасить?</a></li>
+                        <li class="menu__item"><a href="#">Новости</a></li>
+                    </ul>
+
+                    <div class="header-links">
+                        <span class="header-links__call">
+                            <a class="order-call" href="#">Заказать звонок</a>
+                            <i class="header-links__note">Перезвоним в удобное Вам время</i>
+                        </span>
+                        <span class="header-links__personal">
+                            <a class="order-call" href="#">Личный кабинет</a>
+                            <a href="#" class="header-links__note">Добавить в избранное</a>
+                        </span>
+			<div class="order-call-dropdown">
+			    <form class="order-call-form" method="post" action="#">
+				<p class="form-note">
+				    С вами свяжется менеджер в удобное для вас время
+				</p>
+				<ul class="fields-list">
+				    <li class="fields-list__item">
+					<label>Представьтесь</label>
+					<input type="text" class="field field_text" name="fName" />
+				    </li>
+				    <li class="fields-list__item">
+					<label>Оставье номер телефона</label>
+					<span class="phone-number-text">+7</span>
+					<input type="text" class="field field_text_code" />
+					<span class="phone-number-text">-</span>
+					<input type="text" class="field field_text_number" />
+				    </li>
+				     <li class="fields-list__item">
+					<label>Укажите дату и время звонка</label>
+					<input type="text" class="field field_text_mounth" />
+					<input type="text" class="field field_text_num" />
+					<input type="text" class="field field_text_time" />
+				    </li>
+				</ul>
+				<input class="btn-small" type="submit" />
+			    </form>
+			    <i class="corner"></i>
+                            <i class="close-popup">x</i>
+			</div>
+                    </div>
+                </div>
+            </div> <!-- /.header -->
+
+            <div class="main main_columns"> <!-- .main -->
+
+                <div class="container">
+                    <div class="columns"> <!-- .columns  -->
+                        <div class="column-left"> <!-- .column-left  -->
+                            <div class="slider" id="slider">
+                                <div class="slides_container slides-list">
+				    <div class="slides-list__item slides-list__item_3">
+                                        <div class="slide-img">  <img src="images/teaser3.png" alt="" title="" /></div>
+                                        <h2 class="slide-title">АБСОЛЮТНО БЕЗОПАСНО</h2>
+                                        <p class="slide-text">все данные, вводимые
+                                            <small>на сайте, конфиденциальны</small>
+                                        </p>
+                                    </div>
+                                    <div class="slides-list__item">
+                                        <div class="slide-img"><img src="images/teaser1.png" alt="" title="" /></div>
+                                        <h2 class="slide-title">ДЕНЬГИ ЗА&nbsp;15&nbsp;МИНУТ</h2>
+                                        <p class="slide-text">конфиденциально
+                                            <small>и без документов</small>
+                                        </p>
+                                    </div>
+                                    <div class="slides-list__item slides-list__item_2">
+                                        <div class="slide-img">  <img src="images/teaser2.png" alt="" title="" /></div>
+                                        <h2 class="slide-title"> пополни онлайн&nbsp;-&nbsp;кошелек</h2>
+                                        <p class="slide-text">просто и быстро &mdash;
+                                            <small>отдашь потом</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="condition">
+                                <h3 class="condition__title">Обязательные условия получения займа</h3>
+                                <div class="condition__text">
+                                    <span>Нужно иметь:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/wm.png" alt=""/><a href="#">Сертификат WebMoney</a></li>
+                                    </ul>
+                                    <span>Или аккаунт:</span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/vk.png" alt=""/><a href="#">«Вконтакте»</a></li>
+                                    </ul>
+                                    <span> или: </span>
+                                    <ul class="list_images">
+                                        <li><img src="images/bg/ok.png" alt=""/><a href="#">«Одноклассники»</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+			
+                        </div> <!-- /.column-left  -->
+                        <div class="column-right"> <!-- .column-right  -->
+                            <div class="column-head">
+                                <ul class="breadcumbs">
+                                    <li><a href="#">Главная</a></li><li>/</li> <li><a href="#">Как получить?</a></li><li>/...</li>
+                                </ul>                               
+                            </div>
+                            <div class="column-content">
+                                   
+                                <ul class="how-to-steps">
+                                    <li class="how-to-step1">
+                                        <span class="step-number">1-й шаг</span>
+                                        <h4 class="step-title">Регистрация</h4>
+                                        <img class="step-img" src="images/bg/step1.png" alt="Регистрация" />
+                                    </li>
+                                    <li class="how-to-step2">
+                                        <span class="step-number">2-й шаг</span>
+                                        <h4 class="step-title">Авторизация</h4>
+                                        <img class="step-img" src="images/bg/step2.png" alt="Авторизация" />
+                                    </li>
+                                    <li class="how-to-step3">
+                                        <span class="step-number">3-й шаг</span>
+                                        <h4 class="step-title">Получение денег</h4>
+                                        <img class="step-img" src="images/bg/step3.png" alt="Получение денег" />
+                                    </li>
+                                </ul>
+                                
+                                <div class="kiwi-information">
+                                  <p class="kiwi-information__text"> <a href="#"> Если у вас еще нет 
+                                    киви кошелька, 
+                                    просто создайте его!</a> </p>
+                                    <a class="link-pseudo link-pseudo-orange">
+                                        Это удобно
+                                        <span class="hint-message-box hint-message-box_orange">
+                                            <i class="ico ico-i-w"></i>
+                                            Текст о том как удобно пользоваться 
+                                            киви кошельком в разных случаях жизни 
+                                            текст о том как удобно пользоваться 
+                                            киви кошельком в разных случаях жизни 
+                                        </span>
+                                    </a>
+                                    
+                                </div>
+				
+
+
+                            </div>
+
+                        </div> <!--/.column-right  -->
+                    </div> <!-- /.columns  -->
+
+                </div>
+            </div>  <!-- /.main -->
+            <div class="footer"> <!-- .footer -->
+
+		<div class="footer-columns container">
+		    <div class="footer-column__item footer-column__item_logos">
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos1.png" />
+			<img src="images/bg/card-logos2.png" />
+			<img src="images/bg/card-logos3.png" />
+			<img src="images/bg/card-logos3.png" />
+		    </div>
+		     <div class="footer-column__item">
+			 За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		     </div>
+		      <div class="footer-column__item">
+			  За все время работы, опираясь на принципы честного и
+			  ответственного ведения бизнеса, компания зарекомендовала
+			  себя как надежный партнер в отношениях с каждым из клиентов,
+			  что сделало ее одним из лидеров в сфере
+		      </div>
+
+		      <span class="logo-footer"><img src="images/logo-footer.png" /></span>
+		</div>
+
+	</div> <!-- /.footer -->
+        </div>
+
+
+
+    </body>
+</html>
+
