@@ -2416,7 +2416,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 }
 .how-to-steps li:last-child {
     background: none;
-} 
+}
 .step-number {
     color: #575756;
     font-size: 14px;
@@ -2458,7 +2458,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 .how-to-payments li {
     list-style: none;
     display: block;
-    margin-bottom:53px; 
+    margin-bottom:53px;
 }
 .how-to-payments-title {
     color: #1d1d1b;
@@ -2472,7 +2472,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     padding-left: 205px;
     min-height: 145px;
 }
-.kiwi-information__text, 
+.kiwi-information__text,
 .kiwi-information__text a {
     font-family: 'pf_beausans_probold';
     color: #0073bc;
@@ -2482,7 +2482,7 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 .kiwi-information__text {
     margin-bottom: 7px;
 }
-.link-pseudo .hint-message-box {  
+.link-pseudo .hint-message-box {
     display: none;
     margin-top:30px;
     width: 271px;
@@ -2493,3 +2493,75 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
 
 
 /* how-to-steps < */
+
+/* loan-request < */
+.loan-result-info dl {
+    background: #d9d9d9;
+    height: 38px;
+    margin: 0 0 15px 0;
+    padding: 0 10px 0 28px;
+    border-radius: 8px;
+}
+
+.loan-result-info dt {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 5px;
+    color: #868686;
+    font-size: 30px;
+    line-height: 36px;
+    width: 130px;
+}
+.loan-result-info dd {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    color: #0073bc;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+}
+
+.link-loan-prolong {
+    margin-left: 171px;
+}
+.loan-box .hint-message-box {
+    margin-bottom: 15px;
+    margin-top: 12px;
+    padding-left:28px;
+    padding-right: 18px;
+}
+.loan-box .hint-message-box_blue .ico-i-w {
+    background-position: -26px -110px;
+}
+
+.loan-box .ico-close-blue {
+    background: url(../images/bg/icons.png) 0 -89px no-repeat;
+    position: absolute;
+    top:-12px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    left:auto;
+}
+.loan-result-details {
+    margin-bottom: 15px;
+}
+.loan-result-details dl {
+    height: 20px;
+    background: none;
+    margin: 0 0 3px;
+}
+.loan-result-details dl:nth-child(2n) {
+    border-radius: 10px;
+    background: #d9d9d9;
+}
+.loan-result-details dt,
+.loan-result-details dd {
+    font-size: 14px;
+    line-height: 18px;
+}
+/* loan-request > */

@@ -181,3 +181,7 @@
     background-position: 0 -133px;
     text-shadow: 1px -2px 1px #6c6c6c;
 }
+
+.btnset-center {
+    text-align: center;
+}
