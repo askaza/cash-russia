@@ -2565,3 +2565,118 @@ background: linear-gradient(to right,  #1870b7 0%,#1c86c7 16%,#1f9cd8 37%,#1f9cd
     line-height: 18px;
 }
 /* loan-request > */
+
+/* request-success */
+
+.request-success {
+    background: url(../images/bg/smile-money.png) no-repeat 41px 5px;
+    padding-left: 300px;
+    padding: 9px 0 0 287px;
+    min-height: 175px;
+    margin-bottom: 35px;
+}
+
+.request-success h2 {
+    color: #0073BC;
+    font-family: 'pf_beausans_probold';
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+.request-success h3 {
+    color: #0073BC;
+    font-family: 'pf_beausans_prolight';
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.request-success-details  {    
+    position: relative;
+    margin-top: -9px;
+    padding-right: 225px;
+    position: relative;
+    width: 285px;
+    z-index: 1;
+}
+
+.request-success-details  .hint-message-box {
+    position: absolute;
+    right: 0;
+    top:17px;
+    width: 200px;
+}
+.request-success-details .loan-result-info {
+    margin: 17px 0 4px;
+}
+.request-success-details .loan-result-info dl {
+    background: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.request-success-details .loan-result-info dt {
+    width: 101px;
+    font-size: 22px;
+    line-height: 47px;
+    white-space: nowrap;
+}
+.request-success-details .loan-result-details dt{
+    font-size: 14px;
+    line-height: 19px;
+}
+.request-success-details .link-loan-prolong {
+    margin-left: 110px;
+}
+
+.btnset-ready-request {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 108px;
+    z-index: 12;
+}
+.btnset-ready-request .btn_in {
+    letter-spacing: 1px;
+}
+.btn-dropdown-box {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.btn-dropdown-box .btn {
+    position: relative;
+    z-index: 12;
+}
+.failure-cause {
+    background: url(../images/bg/fail-cause.png) repeat-x #f6a412;
+    margin: 0;
+    padding: 10px 0 13px;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    bottom: 31px;
+    z-index: 10;
+    width: 100%;
+}
+
+.failure-cause li {
+    margin: 0 0 6px;
+    padding: 0 11px;
+    list-style: none outside;
+    position: relative;
+    display: block;
+    text-align: left;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.failure-cause .jq-checkbox {
+    background-position: 0 -50px;
+    height: 15px;
+    width: 15px;
+    margin-top: 0;
+}
+.failure-cause .radio-box {
+    margin-top: 2px;
+}
+.failure-cause .jq-checkbox.checked {
+    background-position: -18px -50px;
+}
